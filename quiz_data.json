@@ -13,5 +13,60 @@
     "CS 6300 - Software Development Process",
     "CS 7637 - Knowledge-Based AI"
   ],
-  "quizzes": []
+  "quizzes": [
+    {
+      "id": "quiz_001",
+      "date": "2026-03-01T17:00:00Z",
+      "course": "CS 6601 - Artificial Intelligence",
+      "topic": "Search (BFS, DFS, A*)",
+      "question": "What is the key difference between BFS and DFS in terms of memory usage?",
+      "correct": true,
+      "userAnswer": "BFS uses more memory because it stores all nodes at the current level, while DFS uses less memory by storing only the path from root to current node"
+    },
+    {
+      "id": "quiz_002",
+      "date": "2026-03-02T17:00:00Z",
+      "course": "CS 7641 - Machine Learning",
+      "topic": "Supervised Learning",
+      "question": "In linear regression, what does the term 'regularization' help prevent?",
+      "correct": false,
+      "userAnswer": "It helps prevent overfitting by adding a penalty term to the cost function"
+    },
+    {
+      "id": "quiz_003",
+      "date": "2026-03-03T17:00:00Z",
+      "course": "CS 6601 - Artificial Intelligence",
+      "topic": "Probabilistic Reasoning / Bayes",
+      "question": "In Bayesian networks, what does a directed edge from node A to node B represent?",
+      "correct": true,
+      "userAnswer": "It represents a conditional dependency where A influences the probability of B"
+    },
+    {
+      "id": "quiz_004",
+      "date": "2026-03-04T17:00:00Z",
+      "course": "CS 7643 - Deep Learning",
+      "topic": "Backpropagation",
+      "question": "What is the purpose of the chain rule in backpropagation?",
+      "correct": true,
+      "userAnswer": "To compute gradients efficiently by breaking down the derivative into a product of partial derivatives through the network layers"
+    },
+    {
+      "id": "quiz_005",
+      "date": "2026-03-05T17:00:00Z",
+      "course": "CS 7650 - Natural Language Processing",
+      "topic": "Language Models",
+      "question": "What is perplexity in the context of language models?",
+      "correct": false,
+      "userAnswer": "It's a measure of how well the model predicts a test set"
+    },
+    {
+      "id": "quiz_006",
+      "date": "2026-03-06T17:00:00Z",
+      "course": "CS 7641 - Machine Learning",
+      "topic": "Unsupervised Learning / Clustering",
+      "question": "In K-means clustering, what is the main limitation when choosing the value of k?",
+      "correct": true,
+      "userAnswer": "There's no automatic way to determine the optimal number of clusters; it must be specified beforehand or determined using heuristics like the elbow method"
+    }
+  ]
 }
