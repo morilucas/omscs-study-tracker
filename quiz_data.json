@@ -1,0 +1,17 @@
+{
+  "student": "Lucas Mori",
+  "program": "OMSCS AI Specialization",
+  "start_date": "2026-03-01",
+  "timezone": "America/New_York",
+  "quiz_schedule": "12:00 PM EST (17:00 UTC)",
+  "courses": [
+    "CS 6601 - Artificial Intelligence",
+    "CS 7641 - Machine Learning",
+    "CS 7643 - Deep Learning",
+    "CS 7650 - Natural Language Processing",
+    "CS 6476 - Computer Vision",
+    "CS 6300 - Software Development Process",
+    "CS 7637 - Knowledge-Based AI"
+  ],
+  "quizzes": []
+}

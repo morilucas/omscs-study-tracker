@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucas's OMSCS AI Quiz Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        header {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+        
+        .header-subtitle {
+            color: #666;
+            font-size: 16px;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .stat-card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        
+        .stat-value {
+            font-size: 32px;
+            font-weight: bold;
+            color: #667eea;
+            margin: 10px 0;
+        }
+        
+        .stat-label {
+            color: #999;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .charts-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+        
+        .chart-card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        .chart-card h2 {
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+        
+        .quiz-history {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        .quiz-history h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        
+        .quiz-item {
+            padding: 15px;
+            border-left: 4px solid #667eea;
+            margin-bottom: 15px;
+            background: #f9f9f9;
+            border-radius: 4px;
+        }
+        
+        .quiz-item.correct {
+            border-left-color: #27ae60;
+            background: #f0fdf4;
+        }
+        
+        .quiz-item.incorrect {
+            border-left-color: #e74c3c;
+            background: #fdf4f5;
+        }
+        
+        .quiz-date {
+            font-size: 12px;
+            color: #999;
+        }
+        
+        .quiz-course {
+            font-weight: bold;
+            color: #667eea;
+            margin-bottom: 5px;
+        }
+        
+        .quiz-topic {
+            color: #555;
+            margin-bottom: 5px;
+        }
+        
+        .quiz-result {
+            font-size: 14px;
+            font-weight: bold;
+        }
+        
+        .empty-state {
+            text-align: center;
+            padding: 40px;
+            color: #999;
+        }
+        
+        .emoji {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        
+        @media (max-width: 768px) {
+            .charts-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .stat-value {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Lucas's OMSCS AI Quiz Dashboard</h1>
+            <p class="header-subtitle">Tracking your path to mastery • CS 6601 | CS 7641 | CS 7643 | + More</p>
+        </header>
+        
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-label">Total Quizzes</div>
+                <div class="stat-value" id="totalQuizzes">0</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">Correct Answers</div>
+                <div class="stat-value" id="correctCount">0</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">Accuracy</div>
+                <div class="stat-value" id="accuracy">0%</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">Current Streak</div>
+                <div class="stat-value" id="streak">0</div>
+            </div>
+        </div>
+        
+        <div class="charts-grid">
+            <div class="chart-card">
+                <h2>Performance by Course</h2>
+                <canvas id="courseChart"></canvas>
+            </div>
+            <div class="chart-card">
+                <h2>Performance by Topic</h2>
+                <canvas id="topicChart"></canvas>
+            </div>
+        </div>
+        
+        <div class="quiz-history">
+            <h2>Quiz History</h2>
+            <div id="quizHistoryContainer" class="empty-state">
+                <div class="emoji">📚</div>
+                <p>No quizzes yet. Your first quiz will arrive at 12:00 PM EST tomorrow!</p>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // Load and display quiz data
+        async function loadDashboard() {
+            try {
+                const response = await fetch('./quiz_data.json');
+                const data = await response.json();
+                
+                if (!data.quizzes || data.quizzes.length === 0) {
+                    console.log('No quiz data yet');
+                    return;
+                }
+                
+                updateStats(data.quizzes);
+                updateCharts(data.quizzes);
+                updateHistory(data.quizzes);
+            } catch (error) {
+                console.error('Error loading dashboard:', error);
+            }
+        }
+        
+        function updateStats(quizzes) {
+            const totalQuizzes = quizzes.length;
+            const correctCount = quizzes.filter(q => q.correct).length;
+            const accuracy = totalQuizzes > 0 ? Math.round((correctCount / totalQuizzes) * 100) : 0;
+            
+            // Calculate streak
+            let streak = 0;
+            for (let i = quizzes.length - 1; i >= 0; i--) {
+                if (quizzes[i].correct) {
+                    streak++;
+                } else {
+                    break;
+                }
+            }
+            
+            document.getElementById('totalQuizzes').textContent = totalQuizzes;
+            document.getElementById('correctCount').textContent = correctCount;
+            document.getElementById('accuracy').textContent = accuracy + '%';
+            document.getElementById('streak').textContent = streak;
+        }
+        
+        function updateCharts(quizzes) {
+            // Group by course
+            const courseStats = {};
+            const topicStats = {};
+            
+            quizzes.forEach(quiz => {
+                const course = quiz.course || 'Unknown';
+                const topic = quiz.topic || 'Unknown';
+                
+                if (!courseStats[course]) {
+                    courseStats[course] = { correct: 0, total: 0 };
+                }
+                if (!topicStats[topic]) {
+                    topicStats[topic] = { correct: 0, total: 0 };
+                }
+                
+                courseStats[course].total++;
+                topicStats[topic].total++;
+                
+                if (quiz.correct) {
+                    courseStats[course].correct++;
+                    topicStats[topic].correct++;
+                }
+            });
+            
+            // Course chart
+            const courseCtx = document.getElementById('courseChart').getContext('2d');
+            new Chart(courseCtx, {
+                type: 'doughnut',
+                data: {
+                    labels: Object.keys(courseStats),
+                    datasets: [{
+                        data: Object.values(courseStats).map(s => s.correct),
+                        backgroundColor: [
+                            '#667eea', '#764ba2', '#f093fb', '#4facfe',
+                            '#43e97b', '#fa709a', '#fee140', '#30b0fe'
+                        ]
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        legend: {
+                            position: 'bottom'
+                        }
+                    }
+                }
+            });
+            
+            // Topic accuracy chart
+            const topicCtx = document.getElementById('topicChart').getContext('2d');
+            const topicLabels = Object.keys(topicStats);
+            const topicAccuracy = topicLabels.map(t => 
+                topicStats[t].total > 0 ? Math.round((topicStats[t].correct / topicStats[t].total) * 100) : 0
+            );
+            
+            new Chart(topicCtx, {
+                type: 'bar',
+                data: {
+                    labels: topicLabels,
+                    datasets: [{
+                        label: 'Accuracy %',
+                        data: topicAccuracy,
+                        backgroundColor: '#667eea',
+                        borderRadius: 4
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    indexAxis: 'y',
+                    plugins: {
+                        legend: {
+                            display: false
+                        }
+                    },
+                    scales: {
+                        x: {
+                            beginAtZero: true,
+                            max: 100
+                        }
+                    }
+                }
+            });
+        }
+        
+        function updateHistory(quizzes) {
+            const container = document.getElementById('quizHistoryContainer');
+            
+            if (quizzes.length === 0) {
+                return;
+            }
+            
+            container.innerHTML = '';
+            
+            // Show quizzes in reverse chronological order
+            quizzes.reverse().forEach(quiz => {
+                const date = new Date(quiz.date);
+                const formattedDate = date.toLocaleDateString() + ' ' + date.toLocaleTimeString();
+                
+                const quizEl = document.createElement('div');
+                quizEl.className = 'quiz-item ' + (quiz.correct ? 'correct' : 'incorrect');
+                
+                quizEl.innerHTML = `
+                    <div class="quiz-date">${formattedDate}</div>
+                    <div class="quiz-course">${quiz.course}</div>
+                    <div class="quiz-topic">Topic: ${quiz.topic}</div>
+                    <div class="quiz-result">${quiz.correct ? '✓ Correct' : '✗ Incorrect'}</div>
+                `;
+                
+                container.appendChild(quizEl);
+            });
+        }
+        
+        // Load on page load and refresh every 10 seconds
+        loadDashboard();
+        setInterval(loadDashboard, 10000);
+    </script>
+</body>
+</html>
