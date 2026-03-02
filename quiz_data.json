@@ -3,7 +3,7 @@
   "program": "OMSCS AI Specialization",
   "start_date": "2026-03-01",
   "timezone": "America/New_York",
-  "quiz_schedule": "12:00 PM EST (17:00 UTC)",
+  "quiz_schedule": "5:00 PM EST (22:00 UTC)",
   "courses": [
     "CS 6601 - Artificial Intelligence",
     "CS 7641 - Machine Learning",
@@ -13,6 +13,226 @@
     "CS 6300 - Software Development Process",
     "CS 7637 - Knowledge-Based AI"
   ],
+  "topic_stats": {
+    "CS 6601 - Artificial Intelligence": {
+      "Search (BFS, DFS, A*)": {
+        "calibrated": false,
+        "last_asked_date": "2026-03-01",
+        "total_attempts": 1,
+        "difficulty_level": "easy"
+      },
+      "Game Playing / Minimax": {
+        "calibrated": false,
+        "last_asked_date": null,
+        "total_attempts": 0,
+        "difficulty_level": "easy"
+      },
+      "Constraint Satisfaction": {
+        "calibrated": false,
+        "last_asked_date": null,
+        "total_attempts": 0,
+        "difficulty_level": "easy"
+      },
+      "Logic & Planning": {
+        "calibrated": false,
+        "last_asked_date": null,
+        "total_attempts": 0,
+        "difficulty_level": "easy"
+      },
+      "Probabilistic Reasoning / Bayes": {
+        "calibrated": false,
+        "last_asked_date": "2026-03-03",
+        "total_attempts": 1,
+        "difficulty_level": "easy"
+      },
+      "Hidden Markov Models": {
+        "calibrated": false,
+        "last_asked_date": null,
+        "total_attempts": 0,
+        "difficulty_level": "easy"
+      }
+    },
+    "CS 7641 - Machine Learning": {
+      "Supervised Learning": {
+        "calibrated": false,
+        "last_asked_date": "2026-03-02",
+        "total_attempts": 1,
+        "difficulty_level": "easy"
+      },
+      "Decision Trees": {
+        "calibrated": false,
+        "last_asked_date": null,
+        "total_attempts": 0,
+        "difficulty_level": "easy"
+      },
+      "Neural Networks": {
+        "calibrated": false,
+        "last_asked_date": null,
+        "total_attempts": 0,
+        "difficulty_level": "easy"
+      },
+      "Unsupervised Learning / Clustering": {
+        "calibrated": false,
+        "last_asked_date": "2026-03-06",
+        "total_attempts": 1,
+        "difficulty_level": "easy"
+      },
+      "Dimensionality Reduction": {
+        "calibrated": false,
+        "last_asked_date": null,
+        "total_attempts": 0,
+        "difficulty_level": "easy"
+      },
+      "Reinforcement Learning": {
+        "calibrated": false,
+        "last_asked_date": null,
+        "total_attempts": 0,
+        "difficulty_level": "easy"
+      },
+      "Bias-Variance Tradeoff": {
+        "calibrated": false,
+        "last_asked_date": null,
+        "total_attempts": 0,
+        "difficulty_level": "easy"
+      }
+    },
+    "CS 7643 - Deep Learning": {
+      "Backpropagation": {
+        "calibrated": false,
+        "last_asked_date": "2026-03-04",
+        "total_attempts": 1,
+        "difficulty_level": "easy"
+      },
+      "CNNs": {
+        "calibrated": false,
+        "last_asked_date": null,
+        "total_attempts": 0,
+        "difficulty_level": "easy"
+      },
+      "RNNs / LSTMs": {
+        "calibrated": false,
+        "last_asked_date": null,
+        "total_attempts": 0,
+        "difficulty_level": "easy"
+      },
+      "Transformers / Attention": {
+        "calibrated": false,
+        "last_asked_date": null,
+        "total_attempts": 0,
+        "difficulty_level": "easy"
+      },
+      "Optimization (SGD, Adam)": {
+        "calibrated": false,
+        "last_asked_date": null,
+        "total_attempts": 0,
+        "difficulty_level": "easy"
+      }
+    },
+    "CS 7650 - Natural Language Processing": {
+      "Language Models": {
+        "calibrated": false,
+        "last_asked_date": "2026-03-05",
+        "total_attempts": 1,
+        "difficulty_level": "easy"
+      },
+      "Parsing": {
+        "calibrated": false,
+        "last_asked_date": null,
+        "total_attempts": 0,
+        "difficulty_level": "easy"
+      },
+      "Embeddings (Word2Vec, etc.)": {
+        "calibrated": false,
+        "last_asked_date": null,
+        "total_attempts": 0,
+        "difficulty_level": "easy"
+      },
+      "Sequence Models": {
+        "calibrated": false,
+        "last_asked_date": null,
+        "total_attempts": 0,
+        "difficulty_level": "easy"
+      }
+    },
+    "CS 6476 - Computer Vision": {
+      "Image Filtering": {
+        "calibrated": false,
+        "last_asked_date": null,
+        "total_attempts": 0,
+        "difficulty_level": "easy"
+      },
+      "Feature Detection": {
+        "calibrated": false,
+        "last_asked_date": null,
+        "total_attempts": 0,
+        "difficulty_level": "easy"
+      },
+      "Object Recognition": {
+        "calibrated": false,
+        "last_asked_date": null,
+        "total_attempts": 0,
+        "difficulty_level": "easy"
+      },
+      "Optical Flow": {
+        "calibrated": false,
+        "last_asked_date": null,
+        "total_attempts": 0,
+        "difficulty_level": "easy"
+      }
+    },
+    "CS 6300 - Software Development Process": {
+      "Software Engineering Principles": {
+        "calibrated": false,
+        "last_asked_date": null,
+        "total_attempts": 0,
+        "difficulty_level": "easy"
+      },
+      "Testing & Debugging": {
+        "calibrated": false,
+        "last_asked_date": null,
+        "total_attempts": 0,
+        "difficulty_level": "easy"
+      },
+      "Version Control / Git": {
+        "calibrated": false,
+        "last_asked_date": null,
+        "total_attempts": 0,
+        "difficulty_level": "easy"
+      },
+      "Agile / Scrum": {
+        "calibrated": false,
+        "last_asked_date": null,
+        "total_attempts": 0,
+        "difficulty_level": "easy"
+      }
+    },
+    "CS 7637 - Knowledge-Based AI": {
+      "Semantic Networks": {
+        "calibrated": false,
+        "last_asked_date": null,
+        "total_attempts": 0,
+        "difficulty_level": "easy"
+      },
+      "Frames & Scripts": {
+        "calibrated": false,
+        "last_asked_date": null,
+        "total_attempts": 0,
+        "difficulty_level": "easy"
+      },
+      "Case-Based Reasoning": {
+        "calibrated": false,
+        "last_asked_date": null,
+        "total_attempts": 0,
+        "difficulty_level": "easy"
+      },
+      "Planning": {
+        "calibrated": false,
+        "last_asked_date": null,
+        "total_attempts": 0,
+        "difficulty_level": "easy"
+      }
+    }
+  },
   "quizzes": [
     {
       "id": "quiz_001",
@@ -21,7 +241,9 @@
       "topic": "Search (BFS, DFS, A*)",
       "question": "What is the key difference between BFS and DFS in terms of memory usage?",
       "correct": true,
-      "userAnswer": "BFS uses more memory because it stores all nodes at the current level, while DFS uses less memory by storing only the path from root to current node"
+      "userAnswer": "BFS uses more memory because it stores all nodes at the current level, while DFS uses less memory by storing only the path from root to current node",
+      "difficulty": "easy",
+      "confidence": null
     },
     {
       "id": "quiz_002",
@@ -30,7 +252,9 @@
       "topic": "Supervised Learning",
       "question": "In linear regression, what does the term 'regularization' help prevent?",
       "correct": false,
-      "userAnswer": "It helps prevent overfitting by adding a penalty term to the cost function"
+      "userAnswer": "It helps prevent overfitting by adding a penalty term to the cost function",
+      "difficulty": "easy",
+      "confidence": null
     },
     {
       "id": "quiz_003",
@@ -39,7 +263,9 @@
       "topic": "Probabilistic Reasoning / Bayes",
       "question": "In Bayesian networks, what does a directed edge from node A to node B represent?",
       "correct": true,
-      "userAnswer": "It represents a conditional dependency where A influences the probability of B"
+      "userAnswer": "It represents a conditional dependency where A influences the probability of B",
+      "difficulty": "easy",
+      "confidence": null
     },
     {
       "id": "quiz_004",
@@ -48,7 +274,9 @@
       "topic": "Backpropagation",
       "question": "What is the purpose of the chain rule in backpropagation?",
       "correct": true,
-      "userAnswer": "To compute gradients efficiently by breaking down the derivative into a product of partial derivatives through the network layers"
+      "userAnswer": "To compute gradients efficiently by breaking down the derivative into a product of partial derivatives through the network layers",
+      "difficulty": "easy",
+      "confidence": null
     },
     {
       "id": "quiz_005",
@@ -57,7 +285,9 @@
       "topic": "Language Models",
       "question": "What is perplexity in the context of language models?",
       "correct": false,
-      "userAnswer": "It's a measure of how well the model predicts a test set"
+      "userAnswer": "It's a measure of how well the model predicts a test set",
+      "difficulty": "easy",
+      "confidence": null
     },
     {
       "id": "quiz_006",
@@ -66,7 +296,9 @@
       "topic": "Unsupervised Learning / Clustering",
       "question": "In K-means clustering, what is the main limitation when choosing the value of k?",
       "correct": true,
-      "userAnswer": "There's no automatic way to determine the optimal number of clusters; it must be specified beforehand or determined using heuristics like the elbow method"
+      "userAnswer": "There's no automatic way to determine the optimal number of clusters; it must be specified beforehand or determined using heuristics like the elbow method",
+      "difficulty": "easy",
+      "confidence": null
     }
   ]
 }
