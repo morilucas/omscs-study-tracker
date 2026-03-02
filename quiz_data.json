@@ -17,8 +17,8 @@
     "CS 6601 - Artificial Intelligence": {
       "Search (BFS, DFS, A*)": {
         "calibrated": false,
-        "last_asked_date": "2026-03-01",
-        "total_attempts": 1,
+        "last_asked_date": null,
+        "total_attempts": 0,
         "difficulty_level": "easy"
       },
       "Game Playing / Minimax": {
@@ -41,8 +41,8 @@
       },
       "Probabilistic Reasoning / Bayes": {
         "calibrated": false,
-        "last_asked_date": "2026-03-03",
-        "total_attempts": 1,
+        "last_asked_date": null,
+        "total_attempts": 0,
         "difficulty_level": "easy"
       },
       "Hidden Markov Models": {
@@ -55,8 +55,8 @@
     "CS 7641 - Machine Learning": {
       "Supervised Learning": {
         "calibrated": false,
-        "last_asked_date": "2026-03-02",
-        "total_attempts": 1,
+        "last_asked_date": null,
+        "total_attempts": 0,
         "difficulty_level": "easy"
       },
       "Decision Trees": {
@@ -99,8 +99,8 @@
     "CS 7643 - Deep Learning": {
       "Backpropagation": {
         "calibrated": false,
-        "last_asked_date": "2026-03-04",
-        "total_attempts": 1,
+        "last_asked_date": null,
+        "total_attempts": 0,
         "difficulty_level": "easy"
       },
       "CNNs": {
@@ -131,8 +131,8 @@
     "CS 7650 - Natural Language Processing": {
       "Language Models": {
         "calibrated": false,
-        "last_asked_date": "2026-03-05",
-        "total_attempts": 1,
+        "last_asked_date": null,
+        "total_attempts": 0,
         "difficulty_level": "easy"
       },
       "Parsing": {
@@ -236,62 +236,7 @@
   "quizzes": [
     {
       "id": "quiz_001",
-      "date": "2026-03-01T17:00:00Z",
-      "course": "CS 6601 - Artificial Intelligence",
-      "topic": "Search (BFS, DFS, A*)",
-      "question": "What is the key difference between BFS and DFS in terms of memory usage?",
-      "correct": true,
-      "userAnswer": "BFS uses more memory because it stores all nodes at the current level, while DFS uses less memory by storing only the path from root to current node",
-      "difficulty": "easy",
-      "confidence": null
-    },
-    {
-      "id": "quiz_002",
-      "date": "2026-03-02T17:00:00Z",
-      "course": "CS 7641 - Machine Learning",
-      "topic": "Supervised Learning",
-      "question": "In linear regression, what does the term 'regularization' help prevent?",
-      "correct": false,
-      "userAnswer": "It helps prevent overfitting by adding a penalty term to the cost function",
-      "difficulty": "easy",
-      "confidence": null
-    },
-    {
-      "id": "quiz_003",
-      "date": "2026-03-03T17:00:00Z",
-      "course": "CS 6601 - Artificial Intelligence",
-      "topic": "Probabilistic Reasoning / Bayes",
-      "question": "In Bayesian networks, what does a directed edge from node A to node B represent?",
-      "correct": true,
-      "userAnswer": "It represents a conditional dependency where A influences the probability of B",
-      "difficulty": "easy",
-      "confidence": null
-    },
-    {
-      "id": "quiz_004",
-      "date": "2026-03-04T17:00:00Z",
-      "course": "CS 7643 - Deep Learning",
-      "topic": "Backpropagation",
-      "question": "What is the purpose of the chain rule in backpropagation?",
-      "correct": true,
-      "userAnswer": "To compute gradients efficiently by breaking down the derivative into a product of partial derivatives through the network layers",
-      "difficulty": "easy",
-      "confidence": null
-    },
-    {
-      "id": "quiz_005",
-      "date": "2026-03-05T17:00:00Z",
-      "course": "CS 7650 - Natural Language Processing",
-      "topic": "Language Models",
-      "question": "What is perplexity in the context of language models?",
-      "correct": false,
-      "userAnswer": "It's a measure of how well the model predicts a test set",
-      "difficulty": "easy",
-      "confidence": null
-    },
-    {
-      "id": "quiz_006",
-      "date": "2026-03-06T17:00:00Z",
+      "date": "2026-03-06T22:00:00Z",
       "course": "CS 7641 - Machine Learning",
       "topic": "Unsupervised Learning / Clustering",
       "question": "In K-means clustering, what is the main limitation when choosing the value of k?",
