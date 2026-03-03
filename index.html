@@ -241,6 +241,13 @@
         .option-item.selected-incorrect .option-key { background: #e74c3c; color: #fff; }
         .option-item.is-correct { background: #eafaf1; border-color: #27ae60; color: #0e6655; }
         .option-item.is-correct .option-key { background: #27ae60; color: #fff; }
+        .option-indicator {
+            margin-left: auto; font-size: 10px; font-weight: 700;
+            padding: 2px 7px; border-radius: 8px; white-space: nowrap; flex-shrink: 0;
+        }
+        .selected-correct .option-indicator { background: #27ae60; color: #fff; }
+        .selected-incorrect .option-indicator { background: #e74c3c; color: #fff; }
+        .is-correct .option-indicator { background: #27ae60; color: #fff; }
 
         .empty-state { text-align: center; padding: 40px; color: #bbb; }
         .empty-emoji { font-size: 40px; margin-bottom: 12px; }
@@ -656,11 +663,12 @@ async function loadDashboard() {
             const items = Object.entries(q.options).map(([key, text]) => {
                 const isSelected = q.userAnswer === key;
                 const isCorrect = q.correctOption === key;
-                let cls = '';
-                if (isSelected && isCorrect) cls = 'selected-correct';
-                else if (isSelected && !isCorrect) cls = 'selected-incorrect';
-                else if (!isSelected && isCorrect && !q.correct) cls = 'is-correct';
-                return `<li class="option-item ${cls}"><span class="option-key">${key}</span>${text}</li>`;
+                let cls = '', indicator = '';
+                if (isSelected && isCorrect) { cls = 'selected-correct'; indicator = 'Your answer ✓'; }
+                else if (isSelected && !isCorrect) { cls = 'selected-incorrect'; indicator = 'Your answer ✗'; }
+                else if (!isSelected && isCorrect && !q.correct) { cls = 'is-correct'; indicator = 'Correct answer'; }
+                const badge = indicator ? `<span class="option-indicator">${indicator}</span>` : '';
+                return `<li class="option-item ${cls}"><span class="option-key">${key}</span>${text}${badge}</li>`;
             }).join('');
             optionsHtml = `<div class="detail-label">Options</div><ul class="option-list">${items}</ul>`;
         }
