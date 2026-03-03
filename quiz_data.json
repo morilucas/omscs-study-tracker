@@ -23,8 +23,8 @@
       },
       "Game Playing / Minimax": {
         "calibrated": false,
-        "last_asked_date": null,
-        "total_attempts": 0,
+        "last_asked_date": "2026-03-03",
+        "total_attempts": 1,
         "difficulty_level": "easy"
       },
       "Constraint Satisfaction": {
@@ -85,8 +85,8 @@
       },
       "Reinforcement Learning": {
         "calibrated": false,
-        "last_asked_date": null,
-        "total_attempts": 0,
+        "last_asked_date": "2026-03-03",
+        "total_attempts": 1,
         "difficulty_level": "easy"
       },
       "Bias-Variance Tradeoff": {
@@ -137,8 +137,8 @@
       },
       "Parsing": {
         "calibrated": false,
-        "last_asked_date": null,
-        "total_attempts": 0,
+        "last_asked_date": "2026-03-03",
+        "total_attempts": 1,
         "difficulty_level": "easy"
       },
       "Embeddings (Word2Vec, etc.)": {
@@ -261,6 +261,60 @@
       },
       "correctOption": "D",
       "userAnswer": "A",
+      "correct": false,
+      "difficulty": "easy",
+      "confidence": 1
+    },
+    {
+      "id": "quiz_006",
+      "date": "2026-03-03T20:17:00Z",
+      "course": "CS 6601 - Artificial Intelligence",
+      "topic": "Game Playing / Minimax",
+      "question": "In minimax with alpha-beta pruning, what is the maximum number of leaf nodes that must be evaluated in the best case?",
+      "options": {
+        "A": "The same as without pruning — all leaf nodes",
+        "B": "Approximately O(b^(d/2))",
+        "C": "Logarithmic in the tree size",
+        "D": "O(b^d) but with reduced branching factor"
+      },
+      "correctOption": "B",
+      "userAnswer": "?",
+      "correct": false,
+      "difficulty": "easy",
+      "confidence": 1
+    },
+    {
+      "id": "quiz_007",
+      "date": "2026-03-03T20:17:00Z",
+      "course": "CS 7641 - Machine Learning",
+      "topic": "Reinforcement Learning",
+      "question": "In Q-learning, which of the following is the main advantage over SARSA?",
+      "options": {
+        "A": "Q-learning is guaranteed to converge faster",
+        "B": "Q-learning is off-policy and learns the optimal policy regardless of exploration strategy",
+        "C": "Q-learning requires fewer episodes to converge",
+        "D": "Q-learning uses a different discount factor"
+      },
+      "correctOption": "B",
+      "userAnswer": "?",
+      "correct": false,
+      "difficulty": "easy",
+      "confidence": 1
+    },
+    {
+      "id": "quiz_008",
+      "date": "2026-03-03T20:17:00Z",
+      "course": "CS 7650 - Natural Language Processing",
+      "topic": "Parsing",
+      "question": "What is the time complexity of the CYK (Cocke-Younger-Kasami) parsing algorithm for a sentence of length n?",
+      "options": {
+        "A": "O(n)",
+        "B": "O(n²)",
+        "C": "O(n³)",
+        "D": "O(n⁴)"
+      },
+      "correctOption": "C",
+      "userAnswer": "?",
       "correct": false,
       "difficulty": "easy",
       "confidence": 1
