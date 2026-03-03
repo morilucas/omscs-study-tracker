@@ -163,8 +163,8 @@
       },
       "Feature Detection": {
         "calibrated": false,
-        "last_asked_date": null,
-        "total_attempts": 0,
+        "last_asked_date": "2026-03-03",
+        "total_attempts": 1,
         "difficulty_level": "easy"
       },
       "Object Recognition": {
@@ -246,5 +246,24 @@
     "difficulty": "easy|medium|hard",
     "confidence": "1|2|3|null"
   },
-  "quizzes": []
+  "quizzes": [
+    {
+      "id": "quiz_005",
+      "date": "2026-03-03T19:53:00Z",
+      "course": "CS 6476 - Computer Vision",
+      "topic": "Feature Detection",
+      "question": "Which of the following is NOT a commonly used feature detector in computer vision?",
+      "options": {
+        "A": "SIFT (Scale-Invariant Feature Transform)",
+        "B": "SURF (Speeded Up Robust Features)",
+        "C": "ORB (Oriented FAST and Rotated BRIEF)",
+        "D": "DIFT (Distributed Image Feature Transformation)"
+      },
+      "correctOption": "D",
+      "userAnswer": "A",
+      "correct": false,
+      "difficulty": "easy",
+      "confidence": 1
+    }
+  ]
 }
