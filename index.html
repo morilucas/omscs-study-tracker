@@ -297,11 +297,6 @@
             <div class="stat-value" id="streak">0</div>
             <div class="stat-sub">correct in a row</div>
         </div>
-        <div class="stat-card">
-            <div class="stat-label">Avg Confidence</div>
-            <div class="stat-value" id="avgConf">—</div>
-            <div class="stat-sub">1 = guessed · 3 = confident</div>
-        </div>
     </div>
 
     <!-- Calibration Banner (hidden when done) -->
@@ -432,7 +427,7 @@ async function loadDashboard() {
         if (quizzes[i].correct) streak++; else break;
     }
 
-    const confQuizzes = quizzes.filter(q => q.confidence != null);
+    const confQuizzes = quizzes.filter(q => q.confidence != null && q.confidence > 0);
     const avgConf = confQuizzes.length > 0
         ? (confQuizzes.reduce((s, q) => s + q.confidence, 0) / confQuizzes.length).toFixed(1)
         : null;
@@ -453,7 +448,6 @@ async function loadDashboard() {
     document.getElementById('accuracy').textContent = accuracy + '%';
     document.getElementById('accuracyFraction').textContent = correct + ' / ' + total + ' correct';
     document.getElementById('streak').textContent = streak;
-    document.getElementById('avgConf').textContent = avgConf ? avgConf + ' / 3' : '—';
     document.getElementById('calibrationStat').textContent = calibratedCount + ' / ' + totalTopics;
 
     // Phase badge
