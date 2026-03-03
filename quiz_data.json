@@ -239,12 +239,17 @@
     "course": "string",
     "topic": "string",
     "question": "string",
-    "options": { "A": "string", "B": "string", "C": "string", "D": "string" },
+    "options": {
+      "A": "string",
+      "B": "string",
+      "C": "string",
+      "D": "string"
+    },
     "correctOption": "A|B|C|D",
     "userAnswer": "A|B|C|D|?",
     "correct": "boolean",
     "difficulty": "easy|medium|hard",
-    "confidence": "1|2|3|null"
+    "confidence": "0|1|2|3|null"
   },
   "quizzes": [
     {
@@ -272,7 +277,7 @@
       "topic": "Game Playing / Minimax",
       "question": "In minimax with alpha-beta pruning, what is the maximum number of leaf nodes that must be evaluated in the best case?",
       "options": {
-        "A": "The same as without pruning — all leaf nodes",
+        "A": "The same as without pruning \u2014 all leaf nodes",
         "B": "Approximately O(b^(d/2))",
         "C": "Logarithmic in the tree size",
         "D": "O(b^d) but with reduced branching factor"
@@ -281,7 +286,7 @@
       "userAnswer": "?",
       "correct": false,
       "difficulty": "easy",
-      "confidence": 1
+      "confidence": 0
     },
     {
       "id": "quiz_007",
@@ -299,7 +304,7 @@
       "userAnswer": "?",
       "correct": false,
       "difficulty": "easy",
-      "confidence": 1
+      "confidence": 0
     },
     {
       "id": "quiz_008",
@@ -309,15 +314,15 @@
       "question": "What is the time complexity of the CYK (Cocke-Younger-Kasami) parsing algorithm for a sentence of length n?",
       "options": {
         "A": "O(n)",
-        "B": "O(n²)",
-        "C": "O(n³)",
-        "D": "O(n⁴)"
+        "B": "O(n\u00b2)",
+        "C": "O(n\u00b3)",
+        "D": "O(n\u2074)"
       },
       "correctOption": "C",
       "userAnswer": "?",
       "correct": false,
       "difficulty": "easy",
-      "confidence": 1
+      "confidence": 0
     }
   ]
 }

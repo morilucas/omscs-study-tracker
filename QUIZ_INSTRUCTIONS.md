@@ -46,4 +46,4 @@ All 4 options must always be saved, along with `correctOption` and `userAnswer`.
 | `userAnswer` | string | The option I chose: `A`, `B`, `C`, `D`, or `"?"` for I don't know |
 | `correct` | boolean | `true` if `userAnswer === correctOption` (always `false` when `"?"`) |
 | `difficulty` | string | `easy`, `medium`, or `hard` |
-| `confidence` | number | `1` = guessed, `2` = somewhat sure, `3` = confident — always `1` when `userAnswer` is `"?"` |
+| `confidence` | number | `0` = I don't know, `1` = guessed, `2` = somewhat sure, `3` = confident — always `0` when `userAnswer` is `"?"` |
