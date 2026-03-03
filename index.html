@@ -221,11 +221,26 @@
             padding: 14px 16px 16px 40px;
         }
         .detail-inner.open { display: block; }
-        .detail-label { font-size: 11px; text-transform: uppercase; letter-spacing: 0.8px; color: #999; margin-bottom: 4px; }
-        .detail-text { font-size: 13px; color: #333; line-height: 1.5; margin-bottom: 12px; }
-        .detail-text:last-child { margin-bottom: 0; }
-        .detail-answer-correct { color: #0e6655; }
-        .detail-answer-incorrect { color: #922b21; }
+        .detail-label { font-size: 11px; text-transform: uppercase; letter-spacing: 0.8px; color: #999; margin-bottom: 8px; }
+        .detail-question { font-size: 13px; color: #333; line-height: 1.5; margin-bottom: 14px; font-weight: 500; }
+        .option-list { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+        .option-item {
+            display: flex; align-items: flex-start; gap: 10px;
+            font-size: 13px; color: #555; line-height: 1.4;
+            padding: 6px 10px; border-radius: 6px; background: #fff;
+            border: 1px solid #e8e8e8;
+        }
+        .option-key {
+            font-weight: 700; font-size: 11px; min-width: 20px; height: 20px;
+            border-radius: 50%; display: flex; align-items: center; justify-content: center;
+            background: #eee; color: #666; flex-shrink: 0; margin-top: 1px;
+        }
+        .option-item.selected-correct { background: #eafaf1; border-color: #27ae60; color: #0e6655; }
+        .option-item.selected-correct .option-key { background: #27ae60; color: #fff; }
+        .option-item.selected-incorrect { background: #fdf2f2; border-color: #e74c3c; color: #922b21; }
+        .option-item.selected-incorrect .option-key { background: #e74c3c; color: #fff; }
+        .option-item.is-correct { background: #eafaf1; border-color: #27ae60; color: #0e6655; }
+        .option-item.is-correct .option-key { background: #27ae60; color: #fff; }
 
         .empty-state { text-align: center; padding: 40px; color: #bbb; }
         .empty-emoji { font-size: 40px; margin-bottom: 12px; }
@@ -633,12 +648,26 @@ async function loadDashboard() {
             <td><span class="result-badge ${q.correct ? 'correct' : 'incorrect'}">${q.correct ? '✓ Correct' : '✗ Incorrect'}</span></td>
             <td>${conf != null ? '<span class="conf-badge ' + (confBadgeClass[conf] || '') + '">' + (confLabels[conf] || conf) + '</span>' : '<span style="color:#ccc">—</span>'}</td>`;
 
-        const answerClass = q.correct ? 'detail-answer-correct' : 'detail-answer-incorrect';
         const detailTr = document.createElement('tr');
         detailTr.className = 'detail-row';
+
+        let optionsHtml = '';
+        if (q.options && typeof q.options === 'object') {
+            const items = Object.entries(q.options).map(([key, text]) => {
+                const isSelected = q.userAnswer === key;
+                const isCorrect = q.correctOption === key;
+                let cls = '';
+                if (isSelected && isCorrect) cls = 'selected-correct';
+                else if (isSelected && !isCorrect) cls = 'selected-incorrect';
+                else if (!isSelected && isCorrect && !q.correct) cls = 'is-correct';
+                return `<li class="option-item ${cls}"><span class="option-key">${key}</span>${text}</li>`;
+            }).join('');
+            optionsHtml = `<div class="detail-label">Options</div><ul class="option-list">${items}</ul>`;
+        }
+
         detailTr.innerHTML = `<td colspan="7"><div class="detail-inner" id="${detailId}">
-            ${q.question ? '<div class="detail-label">Question</div><div class="detail-text">${q.question}</div>' : ''}
-            ${q.userAnswer ? '<div class="detail-label">Your Answer</div><div class="detail-text ' + answerClass + '">' + q.userAnswer + '</div>' : ''}
+            ${q.question ? '<div class="detail-label">Question</div><div class="detail-question">' + q.question + '</div>' : ''}
+            ${optionsHtml}
         </div></td>`;
 
         tr.addEventListener('click', () => {

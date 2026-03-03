@@ -233,50 +233,18 @@
       }
     }
   },
-  "quizzes": [
-    {
-      "id": "quiz_001",
-      "date": "2026-03-06T22:00:00Z",
-      "course": "CS 7641 - Machine Learning",
-      "topic": "Unsupervised Learning / Clustering",
-      "question": "In K-means clustering, what is the main limitation when choosing the value of k?",
-      "correct": true,
-      "userAnswer": "There's no automatic way to determine the optimal number of clusters; it must be specified beforehand or determined using heuristics like the elbow method",
-      "difficulty": "easy",
-      "confidence": null
-    },
-    {
-      "id": "quiz_002",
-      "date": "2026-03-03T19:31:00Z",
-      "course": "CS 6601 - Artificial Intelligence",
-      "topic": "Search (BFS, DFS, A*)",
-      "question": "In A* search, what role does the heuristic function h(n) play?",
-      "correct": true,
-      "userAnswer": "A",
-      "difficulty": "easy",
-      "confidence": 2
-    },
-    {
-      "id": "quiz_003",
-      "date": "2026-03-03T19:31:00Z",
-      "course": "CS 7643 - Deep Learning",
-      "topic": "Backpropagation",
-      "question": "Which of the following best describes the vanishing gradient problem?",
-      "correct": true,
-      "userAnswer": "B",
-      "difficulty": "easy",
-      "confidence": 2
-    },
-    {
-      "id": "quiz_004",
-      "date": "2026-03-03T19:31:00Z",
-      "course": "CS 7650 - Natural Language Processing",
-      "topic": "Language Models",
-      "question": "What is the main architectural difference between autoregressive and masked language models?",
-      "correct": true,
-      "userAnswer": "C",
-      "difficulty": "easy",
-      "confidence": 2
-    }
-  ]
+  "quiz_schema": {
+    "id": "string",
+    "date": "ISO 8601",
+    "course": "string",
+    "topic": "string",
+    "question": "string",
+    "options": { "A": "string", "B": "string", "C": "string", "D": "string" },
+    "correctOption": "A|B|C|D",
+    "userAnswer": "A|B|C|D",
+    "correct": "boolean",
+    "difficulty": "easy|medium|hard",
+    "confidence": "1|2|3|null"
+  },
+  "quizzes": []
 }
