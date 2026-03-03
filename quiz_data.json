@@ -241,7 +241,7 @@
     "question": "string",
     "options": { "A": "string", "B": "string", "C": "string", "D": "string" },
     "correctOption": "A|B|C|D",
-    "userAnswer": "A|B|C|D",
+    "userAnswer": "A|B|C|D|?",
     "correct": "boolean",
     "difficulty": "easy|medium|hard",
     "confidence": "1|2|3|null"

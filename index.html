@@ -432,7 +432,7 @@ async function loadDashboard() {
         if (quizzes[i].correct) streak++; else break;
     }
 
-    const confQuizzes = quizzes.filter(q => q.confidence != null);
+    const confQuizzes = quizzes.filter(q => q.confidence != null && q.userAnswer !== '?');
     const avgConf = confQuizzes.length > 0
         ? (confQuizzes.reduce((s, q) => s + q.confidence, 0) / confQuizzes.length).toFixed(1)
         : null;
