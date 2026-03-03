@@ -73,8 +73,8 @@
       },
       "Unsupervised Learning / Clustering": {
         "calibrated": false,
-        "last_asked_date": "2026-03-06",
-        "total_attempts": 1,
+        "last_asked_date": null,
+        "total_attempts": 0,
         "difficulty_level": "easy"
       },
       "Dimensionality Reduction": {
@@ -233,17 +233,5 @@
       }
     }
   },
-  "quizzes": [
-    {
-      "id": "quiz_001",
-      "date": "2026-03-06T22:00:00Z",
-      "course": "CS 7641 - Machine Learning",
-      "topic": "Unsupervised Learning / Clustering",
-      "question": "In K-means clustering, what is the main limitation when choosing the value of k?",
-      "correct": true,
-      "userAnswer": "There's no automatic way to determine the optimal number of clusters; it must be specified beforehand or determined using heuristics like the elbow method",
-      "difficulty": "easy",
-      "confidence": null
-    }
-  ]
+  "quizzes": []
 }
