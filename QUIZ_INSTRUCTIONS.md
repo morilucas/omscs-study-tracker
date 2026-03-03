@@ -2,9 +2,12 @@
 
 ## Question Format
 
-Every quiz is **multiple choice with exactly 4 options: A, B, C, D**.
+Every quiz is **multiple choice with exactly 4 options: A, B, C, D**, plus an **"I don't know"** option.
 
-All 4 options must always be saved, along with which option was correct and which one I chose.
+- If I pick A/B/C/D → store `userAnswer` as the chosen letter, `correct` as true/false, ask for confidence (1/2/3)
+- If I pick "I don't know" → store `userAnswer: "?"`, `correct: false`, `confidence: 1` automatically (no need to ask)
+
+All 4 options must always be saved, along with `correctOption` and `userAnswer`.
 
 ## JSON Schema
 
@@ -40,7 +43,7 @@ All 4 options must always be saved, along with which option was correct and whic
 | `question` | string | Full question text |
 | `options` | object | All 4 options — keys A, B, C, D |
 | `correctOption` | string | The correct option letter: `A`, `B`, `C`, or `D` |
-| `userAnswer` | string | The option I chose: `A`, `B`, `C`, or `D` |
-| `correct` | boolean | `true` if `userAnswer === correctOption` |
+| `userAnswer` | string | The option I chose: `A`, `B`, `C`, `D`, or `"?"` for I don't know |
+| `correct` | boolean | `true` if `userAnswer === correctOption` (always `false` when `"?"`) |
 | `difficulty` | string | `easy`, `medium`, or `hard` |
-| `confidence` | number | `1` = guessed, `2` = somewhat sure, `3` = confident |
+| `confidence` | number | `1` = guessed, `2` = somewhat sure, `3` = confident — always `1` when `userAnswer` is `"?"` |

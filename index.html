@@ -178,6 +178,7 @@
         .quiz-table td { padding: 10px 12px; border-bottom: 1px solid #f8f8f8; vertical-align: top; }
         .quiz-table tr.correct td { background: #f9fffe; }
         .quiz-table tr.incorrect td { background: #fffafa; }
+        .quiz-table tr.skipped td { background: #fdf6ff; }
         .quiz-table tr:hover td { background: #f5f5f5; }
         .result-badge {
             display: inline-block;
@@ -188,6 +189,7 @@
         }
         .result-badge.correct { background: #d1f2eb; color: #0e6655; }
         .result-badge.incorrect { background: #fadbd8; color: #922b21; }
+        .result-badge.skipped { background: #e8d5f5; color: #6c3483; }
         .diff-badge {
             display: inline-block;
             padding: 2px 7px;
@@ -248,6 +250,11 @@
         .selected-correct .option-indicator { background: #27ae60; color: #fff; }
         .selected-incorrect .option-indicator { background: #e74c3c; color: #fff; }
         .is-correct .option-indicator { background: #27ae60; color: #fff; }
+        .skipped-note {
+            margin-top: 10px; font-size: 12px; font-weight: 600;
+            color: #6c3483; background: #f3e8fd; border-radius: 6px;
+            padding: 6px 10px; display: inline-block;
+        }
 
         .empty-state { text-align: center; padding: 40px; color: #bbb; }
         .empty-emoji { font-size: 40px; margin-bottom: 12px; }
@@ -644,16 +651,25 @@ async function loadDashboard() {
         const conf = q.confidence;
         const detailId = 'detail-' + idx;
 
+        const skipped = q.userAnswer === '?';
+        const rowClass = skipped ? 'skipped' : (q.correct ? 'correct' : 'incorrect');
+        const resultBadge = skipped
+            ? '<span class="result-badge skipped">? I don\'t know</span>'
+            : `<span class="result-badge ${q.correct ? 'correct' : 'incorrect'}">${q.correct ? '✓ Correct' : '✗ Incorrect'}</span>`;
+        const confHtml = skipped
+            ? '<span style="color:#ccc">—</span>'
+            : (conf != null ? '<span class="conf-badge ' + (confBadgeClass[conf] || '') + '">' + (confLabels[conf] || conf) + '</span>' : '<span style="color:#ccc">—</span>');
+
         const tr = document.createElement('tr');
-        tr.className = (q.correct ? 'correct' : 'incorrect') + ' data-row';
+        tr.className = rowClass + ' data-row';
         tr.innerHTML = `
             <td style="color:#bbb">${num}</td>
             <td style="color:#888;white-space:nowrap">${dateStr}</td>
             <td style="font-size:12px;color:#555">${q.course ? q.course.split(' - ')[0] : '—'}</td>
             <td style="font-size:12px">${q.topic || '—'} <span class="expand-icon" id="icon-${idx}">▶</span></td>
             <td><span class="diff-badge diff-${diff}">${diff}</span></td>
-            <td><span class="result-badge ${q.correct ? 'correct' : 'incorrect'}">${q.correct ? '✓ Correct' : '✗ Incorrect'}</span></td>
-            <td>${conf != null ? '<span class="conf-badge ' + (confBadgeClass[conf] || '') + '">' + (confLabels[conf] || conf) + '</span>' : '<span style="color:#ccc">—</span>'}</td>`;
+            <td>${resultBadge}</td>
+            <td>${confHtml}</td>`;
 
         const detailTr = document.createElement('tr');
         detailTr.className = 'detail-row';
@@ -661,16 +677,17 @@ async function loadDashboard() {
         let optionsHtml = '';
         if (q.options && typeof q.options === 'object') {
             const items = Object.entries(q.options).map(([key, text]) => {
-                const isSelected = q.userAnswer === key;
+                const isSelected = !skipped && q.userAnswer === key;
                 const isCorrect = q.correctOption === key;
                 let cls = '', indicator = '';
                 if (isSelected && isCorrect) { cls = 'selected-correct'; indicator = 'Your answer ✓'; }
                 else if (isSelected && !isCorrect) { cls = 'selected-incorrect'; indicator = 'Your answer ✗'; }
-                else if (!isSelected && isCorrect && !q.correct) { cls = 'is-correct'; indicator = 'Correct answer'; }
+                else if (isCorrect && (skipped || !q.correct)) { cls = 'is-correct'; indicator = 'Correct answer'; }
                 const badge = indicator ? `<span class="option-indicator">${indicator}</span>` : '';
                 return `<li class="option-item ${cls}"><span class="option-key">${key}</span>${text}${badge}</li>`;
             }).join('');
-            optionsHtml = `<div class="detail-label">Options</div><ul class="option-list">${items}</ul>`;
+            const skippedNote = skipped ? '<div class="skipped-note">? You answered: I don\'t know</div>' : '';
+            optionsHtml = `<div class="detail-label">Options</div><ul class="option-list">${items}</ul>${skippedNote}`;
         }
 
         detailTr.innerHTML = `<td colspan="7"><div class="detail-inner" id="${detailId}">
