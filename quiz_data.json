@@ -17,8 +17,8 @@
     "CS 6601 - Artificial Intelligence": {
       "Search (BFS, DFS, A*)": {
         "calibrated": false,
-        "last_asked_date": null,
-        "total_attempts": 0,
+        "last_asked_date": "2026-03-03",
+        "total_attempts": 1,
         "difficulty_level": "easy"
       },
       "Game Playing / Minimax": {
@@ -99,8 +99,8 @@
     "CS 7643 - Deep Learning": {
       "Backpropagation": {
         "calibrated": false,
-        "last_asked_date": null,
-        "total_attempts": 0,
+        "last_asked_date": "2026-03-03",
+        "total_attempts": 1,
         "difficulty_level": "easy"
       },
       "CNNs": {
@@ -131,8 +131,8 @@
     "CS 7650 - Natural Language Processing": {
       "Language Models": {
         "calibrated": false,
-        "last_asked_date": null,
-        "total_attempts": 0,
+        "last_asked_date": "2026-03-03",
+        "total_attempts": 1,
         "difficulty_level": "easy"
       },
       "Parsing": {
@@ -244,6 +244,39 @@
       "userAnswer": "There's no automatic way to determine the optimal number of clusters; it must be specified beforehand or determined using heuristics like the elbow method",
       "difficulty": "easy",
       "confidence": null
+    },
+    {
+      "id": "quiz_002",
+      "date": "2026-03-03T19:31:00Z",
+      "course": "CS 6601 - Artificial Intelligence",
+      "topic": "Search (BFS, DFS, A*)",
+      "question": "In A* search, what role does the heuristic function h(n) play?",
+      "correct": true,
+      "userAnswer": "A",
+      "difficulty": "easy",
+      "confidence": 2
+    },
+    {
+      "id": "quiz_003",
+      "date": "2026-03-03T19:31:00Z",
+      "course": "CS 7643 - Deep Learning",
+      "topic": "Backpropagation",
+      "question": "Which of the following best describes the vanishing gradient problem?",
+      "correct": true,
+      "userAnswer": "B",
+      "difficulty": "easy",
+      "confidence": 2
+    },
+    {
+      "id": "quiz_004",
+      "date": "2026-03-03T19:31:00Z",
+      "course": "CS 7650 - Natural Language Processing",
+      "topic": "Language Models",
+      "question": "What is the main architectural difference between autoregressive and masked language models?",
+      "correct": true,
+      "userAnswer": "C",
+      "difficulty": "easy",
+      "confidence": 2
     }
   ]
 }
