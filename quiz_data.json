@@ -183,8 +183,8 @@
     "CS 6300 - Software Development Process": {
       "Software Engineering Principles": {
         "calibrated": false,
-        "last_asked_date": null,
-        "total_attempts": 0,
+        "last_asked_date": "2026-03-03",
+        "total_attempts": 1,
         "difficulty_level": "easy"
       },
       "Testing & Debugging": {
@@ -318,6 +318,24 @@
       "correct": false,
       "difficulty": "easy",
       "confidence": 1
+    },
+    {
+      "id": "quiz_009",
+      "date": "2026-03-03T22:15:00Z",
+      "course": "CS 6300 - Software Development Process",
+      "topic": "Software Engineering Principles",
+      "question": "In software engineering, what is the primary purpose of establishing a clear software requirements specification (SRS)?",
+      "options": {
+        "A": "To define the aesthetic design of the user interface",
+        "B": "To create a formal agreement between stakeholders about what the software must do",
+        "C": "To establish the coding standards the team will follow",
+        "D": "To determine the project's marketing strategy"
+      },
+      "correctOption": "B",
+      "userAnswer": "B",
+      "correct": true,
+      "difficulty": "easy",
+      "confidence": 2
     }
   ]
 }
