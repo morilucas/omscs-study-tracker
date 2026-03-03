@@ -207,6 +207,26 @@
         .conf-badge-2 { background: #fef9e7; color: #7d6608; }
         .conf-badge-3 { background: #d1f2eb; color: #0e6655; }
 
+        .quiz-table tr.data-row { cursor: pointer; }
+        .quiz-table tr.data-row:hover td { background: #eef2ff; }
+        .expand-icon { float: right; color: #ccc; font-size: 11px; transition: transform 0.2s; }
+        .expand-icon.open { transform: rotate(90deg); color: #667eea; }
+        .detail-row td {
+            padding: 0 !important;
+            border-bottom: 2px solid #e8eaf6 !important;
+            background: #f7f8ff !important;
+        }
+        .detail-inner {
+            display: none;
+            padding: 14px 16px 16px 40px;
+        }
+        .detail-inner.open { display: block; }
+        .detail-label { font-size: 11px; text-transform: uppercase; letter-spacing: 0.8px; color: #999; margin-bottom: 4px; }
+        .detail-text { font-size: 13px; color: #333; line-height: 1.5; margin-bottom: 12px; }
+        .detail-text:last-child { margin-bottom: 0; }
+        .detail-answer-correct { color: #0e6655; }
+        .detail-answer-incorrect { color: #922b21; }
+
         .empty-state { text-align: center; padding: 40px; color: #bbb; }
         .empty-emoji { font-size: 40px; margin-bottom: 12px; }
 
@@ -600,18 +620,36 @@ async function loadDashboard() {
         const num = quizzes.length - idx;
         const diff = q.difficulty || 'easy';
         const conf = q.confidence;
+        const detailId = 'detail-' + idx;
 
         const tr = document.createElement('tr');
-        tr.className = q.correct ? 'correct' : 'incorrect';
+        tr.className = (q.correct ? 'correct' : 'incorrect') + ' data-row';
         tr.innerHTML = `
             <td style="color:#bbb">${num}</td>
             <td style="color:#888;white-space:nowrap">${dateStr}</td>
             <td style="font-size:12px;color:#555">${q.course ? q.course.split(' - ')[0] : '—'}</td>
-            <td style="font-size:12px">${q.topic || '—'}</td>
+            <td style="font-size:12px">${q.topic || '—'} <span class="expand-icon" id="icon-${idx}">▶</span></td>
             <td><span class="diff-badge diff-${diff}">${diff}</span></td>
             <td><span class="result-badge ${q.correct ? 'correct' : 'incorrect'}">${q.correct ? '✓ Correct' : '✗ Incorrect'}</span></td>
             <td>${conf != null ? '<span class="conf-badge ' + (confBadgeClass[conf] || '') + '">' + (confLabels[conf] || conf) + '</span>' : '<span style="color:#ccc">—</span>'}</td>`;
+
+        const answerClass = q.correct ? 'detail-answer-correct' : 'detail-answer-incorrect';
+        const detailTr = document.createElement('tr');
+        detailTr.className = 'detail-row';
+        detailTr.innerHTML = `<td colspan="7"><div class="detail-inner" id="${detailId}">
+            ${q.question ? '<div class="detail-label">Question</div><div class="detail-text">${q.question}</div>' : ''}
+            ${q.userAnswer ? '<div class="detail-label">Your Answer</div><div class="detail-text ' + answerClass + '">' + q.userAnswer + '</div>' : ''}
+        </div></td>`;
+
+        tr.addEventListener('click', () => {
+            const inner = document.getElementById(detailId);
+            const icon = document.getElementById('icon-' + idx);
+            const open = inner.classList.toggle('open');
+            icon.classList.toggle('open', open);
+        });
+
         tbody.appendChild(tr);
+        tbody.appendChild(detailTr);
     });
 }
 
