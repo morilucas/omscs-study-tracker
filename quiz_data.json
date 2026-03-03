@@ -17,8 +17,8 @@
     "CS 6601 - Artificial Intelligence": {
       "Search (BFS, DFS, A*)": {
         "calibrated": false,
-        "last_asked_date": "2026-03-03",
-        "total_attempts": 1,
+        "last_asked_date": null,
+        "total_attempts": 0,
         "difficulty_level": "easy"
       },
       "Game Playing / Minimax": {
@@ -73,8 +73,8 @@
       },
       "Unsupervised Learning / Clustering": {
         "calibrated": false,
-        "last_asked_date": "2026-03-06",
-        "total_attempts": 1,
+        "last_asked_date": null,
+        "total_attempts": 0,
         "difficulty_level": "easy"
       },
       "Dimensionality Reduction": {
@@ -99,8 +99,8 @@
     "CS 7643 - Deep Learning": {
       "Backpropagation": {
         "calibrated": false,
-        "last_asked_date": "2026-03-03",
-        "total_attempts": 1,
+        "last_asked_date": null,
+        "total_attempts": 0,
         "difficulty_level": "easy"
       },
       "CNNs": {
@@ -131,8 +131,8 @@
     "CS 7650 - Natural Language Processing": {
       "Language Models": {
         "calibrated": false,
-        "last_asked_date": "2026-03-03",
-        "total_attempts": 1,
+        "last_asked_date": null,
+        "total_attempts": 0,
         "difficulty_level": "easy"
       },
       "Parsing": {
