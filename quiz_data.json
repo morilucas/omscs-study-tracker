@@ -55,8 +55,8 @@
     "CS 7641 - Machine Learning": {
       "Supervised Learning": {
         "calibrated": false,
-        "last_asked_date": null,
-        "total_attempts": 0,
+        "last_asked_date": "2026-03-05",
+        "total_attempts": 1,
         "difficulty_level": "easy"
       },
       "Decision Trees": {
@@ -336,6 +336,24 @@
       "correct": true,
       "difficulty": "easy",
       "confidence": 2
+    },
+    {
+      "id": "quiz_010",
+      "date": "2026-03-05T01:19:00Z",
+      "course": "CS 7641 - Machine Learning",
+      "topic": "Supervised Learning",
+      "question": "In supervised learning, what is the primary characteristic that distinguishes it from other learning paradigms?",
+      "options": {
+        "A": "The model learns patterns from unlabeled data without any target variable",
+        "B": "The model learns from labeled data where both input features and corresponding target/output values are provided during training",
+        "C": "The model learns through interaction with an environment, receiving rewards or penalties for actions",
+        "D": "The model learns by identifying groups or clusters in data without predefined labels"
+      },
+      "correctOption": "B",
+      "userAnswer": "B",
+      "correct": true,
+      "difficulty": "easy",
+      "confidence": 3
     }
   ]
 }
