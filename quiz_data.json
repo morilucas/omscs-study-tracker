@@ -29,8 +29,8 @@
       },
       "Constraint Satisfaction": {
         "calibrated": false,
-        "last_asked_date": null,
-        "total_attempts": 0,
+        "last_asked_date": "2026-03-05",
+        "total_attempts": 1,
         "difficulty_level": "easy"
       },
       "Logic & Planning": {
