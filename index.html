@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lucas's OMSCS AI Quiz Dashboard</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2"></script>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
 
@@ -157,6 +158,7 @@
             font-weight: 600;
             transition: width 0.4s ease;
         }
+        .conf-0 { background: #95a5a6; }
         .conf-1 { background: #e74c3c; }
         .conf-2 { background: #f39c12; }
         .conf-3 { background: #27ae60; }
@@ -330,9 +332,10 @@
     <div class="card" id="confidenceSection">
         <h2>Confidence Breakdown by Course</h2>
         <div class="conf-legend">
-            <span><span class="conf-dot" style="background:#e74c3c"></span> Guessed (1)</span>
-            <span><span class="conf-dot" style="background:#f39c12"></span> Somewhat sure (2)</span>
-            <span><span class="conf-dot" style="background:#27ae60"></span> Confident (3)</span>
+            <span><span class="conf-dot" style="background:#95a5a6"></span> Skipped</span>
+            <span><span class="conf-dot" style="background:#e74c3c"></span> Guessed</span>
+            <span><span class="conf-dot" style="background:#f39c12"></span> Somewhat sure</span>
+            <span><span class="conf-dot" style="background:#27ae60"></span> Confident</span>
         </div>
         <div id="confidenceBars" style="margin-top:16px;"></div>
     </div>
@@ -404,6 +407,8 @@ function heatmapColor(wAcc, calibrated) {
     return 'green';
 }
 
+Chart.register(ChartDataLabels);
+
 async function loadDashboard() {
     let data;
     try {
@@ -473,10 +478,11 @@ async function loadDashboard() {
         }
     });
 
-    const courseLabels = ACTIVE_COURSES.map(c => c.split(' - ')[0]);
-    const courseAcc = ACTIVE_COURSES.map(c => {
+    const activeCoursesWithData = ACTIVE_COURSES.filter(c => courseStats[c] && courseStats[c].total > 0);
+    const courseLabels = activeCoursesWithData.map(c => c.split(' - ')[0]);
+    const courseAcc = activeCoursesWithData.map(c => {
         const s = courseStats[c];
-        return s.total > 0 ? Math.round(s.correct / s.total * 100) : 0;
+        return Math.round(s.correct / s.total * 100);
     });
 
     const courseCtx = document.getElementById('courseChart').getContext('2d');
@@ -488,15 +494,24 @@ async function loadDashboard() {
             datasets: [{
                 label: 'Accuracy %',
                 data: courseAcc,
-                backgroundColor: ACTIVE_COURSES.map(c => COURSE_COLORS[c] || '#667eea'),
+                backgroundColor: activeCoursesWithData.map(c => COURSE_COLORS[c] || '#667eea'),
                 borderRadius: 6
             }]
         },
         options: {
             responsive: true,
-            plugins: { legend: { display: false } },
+            plugins: {
+                legend: { display: false },
+                datalabels: {
+                    anchor: 'end',
+                    align: 'top',
+                    formatter: v => v + '%',
+                    font: { size: 11, weight: '600' },
+                    color: '#555'
+                }
+            },
             scales: {
-                y: { beginAtZero: true, max: 100, ticks: { callback: v => v + '%' } },
+                y: { beginAtZero: true, max: 110, ticks: { callback: v => v <= 100 ? v + '%' : '' } },
                 x: { ticks: { font: { size: 11 } } }
             }
         }
@@ -525,7 +540,10 @@ async function loadDashboard() {
         },
         options: {
             responsive: true,
-            plugins: { legend: { display: false } },
+            plugins: {
+                legend: { display: false },
+                datalabels: { display: false }
+            },
             scales: {
                 y: { beginAtZero: true, max: 100, ticks: { callback: v => v + '%' } }
             }
@@ -575,15 +593,16 @@ async function loadDashboard() {
     // ── Confidence Breakdown ────────────────────────────
     const confSection = document.getElementById('confidenceBars');
     confSection.innerHTML = '';
-    const hasConfData = confQuizzes.length > 0;
+    const hasConfData = quizzes.length > 0;
 
     if (!hasConfData) {
         confSection.innerHTML = '<div style="color:#bbb;font-size:13px;padding:12px 0;">Confidence data will appear after you answer your first quiz with the new system.</div>';
     } else {
         ACTIVE_COURSES.forEach(course => {
-            const cq = confQuizzes.filter(q => q.course === course);
+            const cq = quizzes.filter(q => q.course === course);
             if (cq.length === 0) return;
 
+            const c0 = cq.filter(q => !q.confidence || q.confidence === 0).length;
             const c1 = cq.filter(q => q.confidence === 1).length;
             const c2 = cq.filter(q => q.confidence === 2).length;
             const c3 = cq.filter(q => q.confidence === 3).length;
@@ -591,12 +610,12 @@ async function loadDashboard() {
 
             const row = document.createElement('div');
             row.className = 'confidence-row';
-            row.innerHTML = '<div class="confidence-row-label">' + course.split(' - ')[0] + ' — ' + course.split(' - ')[1] + ' (' + tot + ' quizzes)</div>';
+            row.innerHTML = '<div class="confidence-row-label">' + course.split(' - ')[0] + ' — ' + course.split(' - ')[1] + ' (' + tot + ' ' + (tot === 1 ? 'quiz' : 'quizzes') + ')</div>';
 
             const stack = document.createElement('div');
             stack.className = 'confidence-bar-stack';
 
-            [[c1, 'conf-1', '😅 Guessed'], [c2, 'conf-2', '🤔 Somewhat sure'], [c3, 'conf-3', '💪 Confident']].forEach(([count, cls, label]) => {
+            [[c0, 'conf-0', '? Skipped'], [c1, 'conf-1', '😅 Guessed'], [c2, 'conf-2', '🤔 Somewhat sure'], [c3, 'conf-3', '💪 Confident']].forEach(([count, cls, label]) => {
                 if (count === 0) return;
                 const pct = Math.round(count / tot * 100);
                 const seg = document.createElement('div');
