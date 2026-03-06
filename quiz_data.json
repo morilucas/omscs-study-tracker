@@ -41,8 +41,8 @@
       },
       "Probabilistic Reasoning / Bayes": {
         "calibrated": false,
-        "last_asked_date": null,
-        "total_attempts": 0,
+        "last_asked_date": "2026-03-06",
+        "total_attempts": 1,
         "difficulty_level": "easy"
       },
       "Hidden Markov Models": {
@@ -377,6 +377,24 @@
       "correct": false,
       "difficulty": "easy",
       "confidence": 0
+    },
+    {
+      "id": "quiz_012",
+      "date": "2026-03-06T22:00:00Z",
+      "course": "CS 6601 - Artificial Intelligence",
+      "topic": "Probabilistic Reasoning / Bayes",
+      "question": "In Bayesian inference, Bayes' theorem is expressed as P(A|B) = P(B|A) × P(A) / P(B). What does P(B|A) represent?",
+      "options": {
+        "A": "The probability of A given B has occurred",
+        "B": "The probability of B given A has occurred",
+        "C": "The prior probability of event A",
+        "D": "The normalization constant"
+      },
+      "correctOption": "B",
+      "userAnswer": null,
+      "correct": null,
+      "difficulty": "easy",
+      "confidence": null
     }
   ]
 }
