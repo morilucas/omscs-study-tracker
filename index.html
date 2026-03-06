@@ -331,10 +331,10 @@
     <div class="card" id="confidenceSection">
         <h2>Confidence Breakdown by Course</h2>
         <div class="conf-legend">
-            <span><span class="conf-dot" style="background:#95a5a6"></span> Skipped (0)</span>
-            <span><span class="conf-dot" style="background:#e74c3c"></span> Guessed (1)</span>
-            <span><span class="conf-dot" style="background:#f39c12"></span> Somewhat sure (2)</span>
-            <span><span class="conf-dot" style="background:#27ae60"></span> Confident (3)</span>
+            <span><span class="conf-dot" style="background:#95a5a6"></span> Skipped</span>
+            <span><span class="conf-dot" style="background:#e74c3c"></span> Guessed</span>
+            <span><span class="conf-dot" style="background:#f39c12"></span> Somewhat sure</span>
+            <span><span class="conf-dot" style="background:#27ae60"></span> Confident</span>
         </div>
         <div id="confidenceBars" style="margin-top:16px;"></div>
     </div>
@@ -596,7 +596,7 @@ async function loadDashboard() {
 
             const row = document.createElement('div');
             row.className = 'confidence-row';
-            row.innerHTML = '<div class="confidence-row-label">' + course.split(' - ')[0] + ' — ' + course.split(' - ')[1] + ' (' + tot + ' quizzes)</div>';
+            row.innerHTML = '<div class="confidence-row-label">' + course.split(' - ')[0] + ' — ' + course.split(' - ')[1] + ' (' + tot + ' ' + (tot === 1 ? 'quiz' : 'quizzes') + ')</div>';
 
             const stack = document.createElement('div');
             stack.className = 'confidence-bar-stack';
