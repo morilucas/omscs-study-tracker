@@ -47,8 +47,8 @@
       },
       "Hidden Markov Models": {
         "calibrated": false,
-        "last_asked_date": null,
-        "total_attempts": 0,
+        "last_asked_date": "2026-03-07",
+        "total_attempts": 1,
         "difficulty_level": "easy"
       }
     },
@@ -389,6 +389,24 @@
         "B": "The probability of B given A has occurred",
         "C": "The prior probability of event A",
         "D": "The normalization constant"
+      },
+      "correctOption": "B",
+      "userAnswer": null,
+      "correct": null,
+      "difficulty": "easy",
+      "confidence": null
+    },
+    {
+      "id": "quiz_013",
+      "date": "2026-03-07T22:00:00Z",
+      "course": "CS 6601 - Artificial Intelligence",
+      "topic": "Hidden Markov Models",
+      "question": "What is the primary purpose of the Viterbi algorithm in Hidden Markov Models?",
+      "options": {
+        "A": "To calculate the probability of an observation sequence given a model",
+        "B": "To find the most likely sequence of hidden states given an observation sequence",
+        "C": "To estimate the parameters of an HMM from training data",
+        "D": "To sample new observation sequences from an HMM"
       },
       "correctOption": "B",
       "userAnswer": null,
