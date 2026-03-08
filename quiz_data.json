@@ -427,10 +427,10 @@
         "D": "A fully-grown CART tree (no depth limit) with SMOTE oversampling applied to the minority class, since balancing the training set alone resolves both the imbalance and overfitting issues."
       },
       "correctOption": "B",
-      "userAnswer": null,
-      "correct": null,
+      "userAnswer": "B",
+      "correct": true,
       "difficulty": "easy",
-      "confidence": null
+      "confidence": 2
     }
   ]
 }
