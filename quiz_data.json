@@ -68,7 +68,7 @@
       "Neural Networks": {
         "calibrated": false,
         "last_asked_date": "2026-03-09",
-        "total_attempts": 1,
+        "total_attempts": 2,
         "difficulty_level": "easy"
       },
       "Unsupervised Learning / Clustering": {
@@ -445,10 +445,10 @@
         "D": "Add a softmax normalization layer before the output sigmoid, since the missing normalization step is the direct cause of the near-zero gradients in the early layers"
       },
       "correctOption": "B",
-      "userAnswer": null,
-      "correct": null,
+      "userAnswer": "B",
+      "correct": true,
       "difficulty": "easy",
-      "confidence": null
+      "confidence": 1
     }
   ]
 }
