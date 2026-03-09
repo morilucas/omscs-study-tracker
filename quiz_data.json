@@ -67,8 +67,8 @@
       },
       "Neural Networks": {
         "calibrated": false,
-        "last_asked_date": null,
-        "total_attempts": 0,
+        "last_asked_date": "2026-03-09",
+        "total_attempts": 1,
         "difficulty_level": "easy"
       },
       "Unsupervised Learning / Clustering": {
@@ -431,6 +431,24 @@
       "correct": true,
       "difficulty": "easy",
       "confidence": 2
+    },
+    {
+      "id": "quiz_015",
+      "date": "2026-03-09T21:00:00Z",
+      "course": "CS 7641 - Machine Learning",
+      "topic": "Neural Networks",
+      "question": "You are training a 4-layer neural network to predict hospital readmission risk (binary classification) from 50 patient features. After 100 epochs, training accuracy is 73% and validation accuracy is 72% — no overfitting — but the loss curve is nearly flat and gradients in the first two layers are consistently near zero. The network uses sigmoid activations throughout all hidden layers. Which change MOST directly targets the root cause of this convergence failure?",
+      "options": {
+        "A": "Add L2 regularization to all weight matrices, since large weights are amplifying the gradient signal and causing it to saturate before reaching early layers",
+        "B": "Replace sigmoid activations with ReLU in the hidden layers, since sigmoid's output is bounded [0,1] and its derivative approaches zero in saturated regions, causing gradients to vanish as they propagate backward through multiple layers",
+        "C": "Increase batch size from 32 to 512, since small batches introduce gradient noise that prevents the optimizer from finding consistent descent directions in deep networks",
+        "D": "Add a softmax normalization layer before the output sigmoid, since the missing normalization step is the direct cause of the near-zero gradients in the early layers"
+      },
+      "correctOption": "B",
+      "userAnswer": null,
+      "correct": null,
+      "difficulty": "easy",
+      "confidence": null
     }
   ]
 }
