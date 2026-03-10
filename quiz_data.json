@@ -16,220 +16,356 @@
   "topic_stats": {
     "CS 6601 - Artificial Intelligence": {
       "Search (BFS, DFS, A*)": {
-        "calibrated": false,
         "last_asked_date": "2026-03-03",
         "total_attempts": 1,
-        "difficulty_level": "easy"
+        "ease_factor": 2.5,
+        "interval_days": 1,
+        "next_review_date": "2026-03-04",
+        "streak": 0,
+        "difficulty_level": "easy",
+        "misconception": false
       },
       "Game Playing / Minimax": {
-        "calibrated": false,
         "last_asked_date": "2026-03-03",
         "total_attempts": 1,
-        "difficulty_level": "easy"
+        "ease_factor": 1.7,
+        "interval_days": 1,
+        "next_review_date": "2026-03-04",
+        "streak": 0,
+        "difficulty_level": "easy",
+        "misconception": false
       },
       "Constraint Satisfaction": {
-        "calibrated": false,
         "last_asked_date": "2026-03-05",
         "total_attempts": 1,
-        "difficulty_level": "easy"
+        "ease_factor": 2.5,
+        "interval_days": 1,
+        "next_review_date": "2026-03-06",
+        "streak": 0,
+        "difficulty_level": "easy",
+        "misconception": false
       },
       "Logic & Planning": {
-        "calibrated": false,
         "last_asked_date": "2026-03-05",
         "total_attempts": 1,
-        "difficulty_level": "easy"
+        "ease_factor": 1.7,
+        "interval_days": 1,
+        "next_review_date": "2026-03-06",
+        "streak": 0,
+        "difficulty_level": "easy",
+        "misconception": false
       },
       "Probabilistic Reasoning / Bayes": {
-        "calibrated": false,
         "last_asked_date": "2026-03-06",
         "total_attempts": 1,
-        "difficulty_level": "easy"
+        "ease_factor": 2.5,
+        "interval_days": 1,
+        "next_review_date": "2026-03-07",
+        "streak": 0,
+        "difficulty_level": "easy",
+        "misconception": false
       },
       "Hidden Markov Models": {
-        "calibrated": false,
         "last_asked_date": "2026-03-07",
         "total_attempts": 2,
-        "difficulty_level": "easy"
+        "ease_factor": 1.7,
+        "interval_days": 1,
+        "next_review_date": "2026-03-08",
+        "streak": 0,
+        "difficulty_level": "easy",
+        "misconception": false
       }
     },
     "CS 7641 - Machine Learning": {
       "Supervised Learning": {
-        "calibrated": false,
         "last_asked_date": "2026-03-05",
         "total_attempts": 1,
-        "difficulty_level": "easy"
+        "ease_factor": 2.8,
+        "interval_days": 7,
+        "next_review_date": "2026-03-12",
+        "streak": 1,
+        "difficulty_level": "easy",
+        "misconception": false
       },
       "Decision Trees": {
-        "calibrated": false,
         "last_asked_date": "2026-03-08",
         "total_attempts": 1,
-        "difficulty_level": "easy"
+        "ease_factor": 2.6,
+        "interval_days": 3,
+        "next_review_date": "2026-03-11",
+        "streak": 1,
+        "difficulty_level": "easy",
+        "misconception": false
       },
       "Neural Networks": {
-        "calibrated": false,
         "last_asked_date": "2026-03-09",
         "total_attempts": 2,
-        "difficulty_level": "easy"
+        "ease_factor": 2.36,
+        "interval_days": 3,
+        "next_review_date": "2026-03-12",
+        "streak": 1,
+        "difficulty_level": "easy",
+        "misconception": false
       },
       "Unsupervised Learning / Clustering": {
-        "calibrated": false,
         "last_asked_date": "2026-03-06",
         "total_attempts": 1,
-        "difficulty_level": "easy"
+        "ease_factor": 2.5,
+        "interval_days": 1,
+        "next_review_date": "2026-03-07",
+        "streak": 0,
+        "difficulty_level": "easy",
+        "misconception": false
       },
       "Dimensionality Reduction": {
-        "calibrated": false,
         "last_asked_date": null,
         "total_attempts": 0,
-        "difficulty_level": "easy"
+        "ease_factor": 2.5,
+        "interval_days": 0,
+        "next_review_date": null,
+        "streak": 0,
+        "difficulty_level": "easy",
+        "misconception": false
       },
       "Reinforcement Learning": {
-        "calibrated": false,
         "last_asked_date": "2026-03-03",
         "total_attempts": 1,
-        "difficulty_level": "easy"
+        "ease_factor": 1.7,
+        "interval_days": 1,
+        "next_review_date": "2026-03-04",
+        "streak": 0,
+        "difficulty_level": "easy",
+        "misconception": false
       },
       "Bias-Variance Tradeoff": {
-        "calibrated": false,
         "last_asked_date": null,
         "total_attempts": 0,
-        "difficulty_level": "easy"
+        "ease_factor": 2.5,
+        "interval_days": 0,
+        "next_review_date": null,
+        "streak": 0,
+        "difficulty_level": "easy",
+        "misconception": false
       }
     },
     "CS 7643 - Deep Learning": {
       "Backpropagation": {
-        "calibrated": false,
         "last_asked_date": "2026-03-03",
         "total_attempts": 1,
-        "difficulty_level": "easy"
+        "ease_factor": 2.5,
+        "interval_days": 1,
+        "next_review_date": "2026-03-04",
+        "streak": 0,
+        "difficulty_level": "easy",
+        "misconception": false
       },
       "CNNs": {
-        "calibrated": false,
         "last_asked_date": null,
         "total_attempts": 0,
-        "difficulty_level": "easy"
+        "ease_factor": 2.5,
+        "interval_days": 0,
+        "next_review_date": null,
+        "streak": 0,
+        "difficulty_level": "easy",
+        "misconception": false
       },
       "RNNs / LSTMs": {
-        "calibrated": false,
         "last_asked_date": null,
         "total_attempts": 0,
-        "difficulty_level": "easy"
+        "ease_factor": 2.5,
+        "interval_days": 0,
+        "next_review_date": null,
+        "streak": 0,
+        "difficulty_level": "easy",
+        "misconception": false
       },
       "Transformers / Attention": {
-        "calibrated": false,
         "last_asked_date": null,
         "total_attempts": 0,
-        "difficulty_level": "easy"
+        "ease_factor": 2.5,
+        "interval_days": 0,
+        "next_review_date": null,
+        "streak": 0,
+        "difficulty_level": "easy",
+        "misconception": false
       },
       "Optimization (SGD, Adam)": {
-        "calibrated": false,
         "last_asked_date": null,
         "total_attempts": 0,
-        "difficulty_level": "easy"
+        "ease_factor": 2.5,
+        "interval_days": 0,
+        "next_review_date": null,
+        "streak": 0,
+        "difficulty_level": "easy",
+        "misconception": false
       }
     },
     "CS 7650 - Natural Language Processing": {
       "Language Models": {
-        "calibrated": false,
         "last_asked_date": "2026-03-03",
         "total_attempts": 1,
-        "difficulty_level": "easy"
+        "ease_factor": 2.5,
+        "interval_days": 1,
+        "next_review_date": "2026-03-04",
+        "streak": 0,
+        "difficulty_level": "easy",
+        "misconception": false
       },
       "Parsing": {
-        "calibrated": false,
         "last_asked_date": "2026-03-03",
         "total_attempts": 1,
-        "difficulty_level": "easy"
+        "ease_factor": 1.7,
+        "interval_days": 1,
+        "next_review_date": "2026-03-04",
+        "streak": 0,
+        "difficulty_level": "easy",
+        "misconception": false
       },
       "Embeddings (Word2Vec, etc.)": {
-        "calibrated": false,
         "last_asked_date": null,
         "total_attempts": 0,
-        "difficulty_level": "easy"
+        "ease_factor": 2.5,
+        "interval_days": 0,
+        "next_review_date": null,
+        "streak": 0,
+        "difficulty_level": "easy",
+        "misconception": false
       },
       "Sequence Models": {
-        "calibrated": false,
         "last_asked_date": null,
         "total_attempts": 0,
-        "difficulty_level": "easy"
+        "ease_factor": 2.5,
+        "interval_days": 0,
+        "next_review_date": null,
+        "streak": 0,
+        "difficulty_level": "easy",
+        "misconception": false
       }
     },
     "CS 6476 - Computer Vision": {
       "Image Filtering": {
-        "calibrated": false,
         "last_asked_date": null,
         "total_attempts": 0,
-        "difficulty_level": "easy"
+        "ease_factor": 2.5,
+        "interval_days": 0,
+        "next_review_date": null,
+        "streak": 0,
+        "difficulty_level": "easy",
+        "misconception": false
       },
       "Feature Detection": {
-        "calibrated": false,
         "last_asked_date": "2026-03-03",
         "total_attempts": 1,
-        "difficulty_level": "easy"
+        "ease_factor": 1.96,
+        "interval_days": 1,
+        "next_review_date": "2026-03-04",
+        "streak": 0,
+        "difficulty_level": "easy",
+        "misconception": true
       },
       "Object Recognition": {
-        "calibrated": false,
         "last_asked_date": null,
         "total_attempts": 0,
-        "difficulty_level": "easy"
+        "ease_factor": 2.5,
+        "interval_days": 0,
+        "next_review_date": null,
+        "streak": 0,
+        "difficulty_level": "easy",
+        "misconception": false
       },
       "Optical Flow": {
-        "calibrated": false,
         "last_asked_date": null,
         "total_attempts": 0,
-        "difficulty_level": "easy"
+        "ease_factor": 2.5,
+        "interval_days": 0,
+        "next_review_date": null,
+        "streak": 0,
+        "difficulty_level": "easy",
+        "misconception": false
       }
     },
     "CS 6300 - Software Development Process": {
       "Software Engineering Principles": {
-        "calibrated": false,
         "last_asked_date": "2026-03-03",
         "total_attempts": 1,
-        "difficulty_level": "easy"
+        "ease_factor": 2.6,
+        "interval_days": 3,
+        "next_review_date": "2026-03-06",
+        "streak": 1,
+        "difficulty_level": "easy",
+        "misconception": false
       },
       "Testing & Debugging": {
-        "calibrated": false,
         "last_asked_date": null,
         "total_attempts": 0,
-        "difficulty_level": "easy"
+        "ease_factor": 2.5,
+        "interval_days": 0,
+        "next_review_date": null,
+        "streak": 0,
+        "difficulty_level": "easy",
+        "misconception": false
       },
       "Version Control / Git": {
-        "calibrated": false,
         "last_asked_date": null,
         "total_attempts": 0,
-        "difficulty_level": "easy"
+        "ease_factor": 2.5,
+        "interval_days": 0,
+        "next_review_date": null,
+        "streak": 0,
+        "difficulty_level": "easy",
+        "misconception": false
       },
       "Agile / Scrum": {
-        "calibrated": false,
         "last_asked_date": null,
         "total_attempts": 0,
-        "difficulty_level": "easy"
+        "ease_factor": 2.5,
+        "interval_days": 0,
+        "next_review_date": null,
+        "streak": 0,
+        "difficulty_level": "easy",
+        "misconception": false
       }
     },
     "CS 7637 - Knowledge-Based AI": {
       "Semantic Networks": {
-        "calibrated": false,
         "last_asked_date": null,
         "total_attempts": 0,
-        "difficulty_level": "easy"
+        "ease_factor": 2.5,
+        "interval_days": 0,
+        "next_review_date": null,
+        "streak": 0,
+        "difficulty_level": "easy",
+        "misconception": false
       },
       "Frames & Scripts": {
-        "calibrated": false,
         "last_asked_date": null,
         "total_attempts": 0,
-        "difficulty_level": "easy"
+        "ease_factor": 2.5,
+        "interval_days": 0,
+        "next_review_date": null,
+        "streak": 0,
+        "difficulty_level": "easy",
+        "misconception": false
       },
       "Case-Based Reasoning": {
-        "calibrated": false,
         "last_asked_date": null,
         "total_attempts": 0,
-        "difficulty_level": "easy"
+        "ease_factor": 2.5,
+        "interval_days": 0,
+        "next_review_date": null,
+        "streak": 0,
+        "difficulty_level": "easy",
+        "misconception": false
       },
       "Planning": {
-        "calibrated": false,
         "last_asked_date": null,
         "total_attempts": 0,
-        "difficulty_level": "easy"
+        "ease_factor": 2.5,
+        "interval_days": 0,
+        "next_review_date": null,
+        "streak": 0,
+        "difficulty_level": "easy",
+        "misconception": false
       }
     }
   },
@@ -246,10 +382,21 @@
       "D": "string"
     },
     "correctOption": "A|B|C|D",
-    "userAnswer": "A|B|C|D",
-    "correct": "boolean",
+    "userAnswer": "A|B|C|D|?|null",
+    "correct": "boolean|null",
     "difficulty": "easy|medium|hard",
-    "confidence": "0|1|2|3|null"
+    "confidence": "0|1|2|3|null",
+    "misconception_correction": "boolean (true if this question targets a previous misconception)"
+  },
+  "topic_stat_schema": {
+    "last_asked_date": "YYYY-MM-DD|null",
+    "total_attempts": "number",
+    "ease_factor": "number (starts 2.5, min 1.3, max 3.0)",
+    "interval_days": "number (days until next review, 0 = never asked)",
+    "next_review_date": "YYYY-MM-DD|null",
+    "streak": "number (consecutive correct answers, resets on wrong)",
+    "difficulty_level": "easy|medium|hard",
+    "misconception": "boolean (true if last wrong answer had confidence >= 2)"
   },
   "quizzes": [
     {
