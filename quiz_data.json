@@ -610,10 +610,10 @@
         "D": "PCA works by clustering the 500 features into 10 groups and replacing each group with its centroid"
       },
       "correctOption": "B",
-      "userAnswer": null,
-      "correct": null,
+      "userAnswer": "B",
+      "correct": true,
       "difficulty": "easy",
-      "confidence": null
+      "confidence": 3
     }
   ]
 }
