@@ -56,11 +56,11 @@
         "misconception": false
       },
       "Probabilistic Reasoning / Bayes": {
-        "last_asked_date": "2026-03-06",
-        "total_attempts": 1,
+        "last_asked_date": "2026-03-10",
+        "total_attempts": 2,
         "ease_factor": 2.5,
         "interval_days": 1,
-        "next_review_date": "2026-03-07",
+        "next_review_date": "2026-03-11",
         "streak": 0,
         "difficulty_level": "easy",
         "misconception": false
@@ -118,11 +118,11 @@
         "misconception": false
       },
       "Dimensionality Reduction": {
-        "last_asked_date": null,
-        "total_attempts": 0,
+        "last_asked_date": "2026-03-10",
+        "total_attempts": 1,
         "ease_factor": 2.5,
-        "interval_days": 0,
-        "next_review_date": null,
+        "interval_days": 1,
+        "next_review_date": "2026-03-11",
         "streak": 0,
         "difficulty_level": "easy",
         "misconception": false
@@ -538,10 +538,10 @@
         "D": "The normalization constant"
       },
       "correctOption": "B",
-      "userAnswer": null,
-      "correct": null,
+      "userAnswer": "A",
+      "correct": false,
       "difficulty": "easy",
-      "confidence": null
+      "confidence": 3
     },
     {
       "id": "quiz_013",
@@ -596,6 +596,24 @@
       "correct": true,
       "difficulty": "easy",
       "confidence": 1
+    },
+    {
+      "id": "quiz_016",
+      "date": "2026-03-10T21:01:00Z",
+      "course": "CS 7641 - Machine Learning",
+      "topic": "Dimensionality Reduction",
+      "question": "You have a dataset with 500 features and 1,000 samples. You apply PCA and find that the first 10 principal components explain 95% of the total variance. Which of the following statements best explains WHY PCA achieves this compression?",
+      "options": {
+        "A": "PCA selects the 10 original features that have the highest variance, discarding all others",
+        "B": "PCA finds orthogonal directions (eigenvectors of the covariance matrix) along which the data varies most, allowing most variance to be captured in far fewer dimensions than the original feature space",
+        "C": "PCA removes correlated features by randomly sampling 10 features and testing whether they reconstruct the original data within a 5% error threshold",
+        "D": "PCA works by clustering the 500 features into 10 groups and replacing each group with its centroid"
+      },
+      "correctOption": "B",
+      "userAnswer": null,
+      "correct": null,
+      "difficulty": "easy",
+      "confidence": null
     }
   ]
 }
