@@ -254,11 +254,11 @@
         "misconception": false
       },
       "Feature Detection": {
-        "last_asked_date": "2026-03-03",
-        "total_attempts": 1,
+        "last_asked_date": "2026-03-11",
+        "total_attempts": 2,
         "ease_factor": 1.96,
         "interval_days": 1,
-        "next_review_date": "2026-03-04",
+        "next_review_date": "2026-03-11",
         "streak": 0,
         "difficulty_level": "easy",
         "misconception": true
@@ -614,6 +614,25 @@
       "correct": true,
       "difficulty": "easy",
       "confidence": 3
+    },
+    {
+      "id": "quiz_017",
+      "date": "2026-03-11T21:00:00Z",
+      "course": "CS 6476 - Computer Vision",
+      "topic": "Feature Detection",
+      "question": "You are building a panorama stitching pipeline that must align overlapping images taken at different scales and orientations. SIFT (Scale-Invariant Feature Transform) is proposed as the feature detector/descriptor. Which of the following correctly describes WHY SIFT is well-suited for this task?",
+      "options": {
+        "A": "SIFT detects features by applying a fixed-size Sobel edge filter at a single scale, making it fast but only effective when images have identical zoom levels",
+        "B": "SIFT builds a scale-space by convolving the image with Gaussians at multiple scales, detects extrema in Difference-of-Gaussian (DoG) images across scales, and assigns dominant gradient orientations to each keypoint — achieving invariance to both scale and rotation changes",
+        "C": "SIFT achieves scale invariance by resizing all input images to a canonical 256×256 resolution before extracting Harris corner features, which normalizes scale differences",
+        "D": "SIFT uses a learned deep neural network to extract features that are inherently invariant to affine transformations, which is why it was introduced as the first learning-based detector"
+      },
+      "correctOption": "B",
+      "userAnswer": null,
+      "correct": null,
+      "difficulty": "easy",
+      "confidence": null,
+      "misconception_correction": true
     }
   ]
 }
