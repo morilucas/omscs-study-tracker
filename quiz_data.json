@@ -256,9 +256,9 @@
       "Feature Detection": {
         "last_asked_date": "2026-03-12",
         "total_attempts": 3,
-        "ease_factor": 1.96,
+        "ease_factor": 1.8599999999999999,
         "interval_days": 1,
-        "next_review_date": "2026-03-12",
+        "next_review_date": "2026-03-13",
         "streak": 0,
         "difficulty_level": "easy",
         "misconception": true
@@ -424,7 +424,7 @@
       "topic": "Game Playing / Minimax",
       "question": "In minimax with alpha-beta pruning, what is the maximum number of leaf nodes that must be evaluated in the best case?",
       "options": {
-        "A": "The same as without pruning — all leaf nodes",
+        "A": "The same as without pruning \u2014 all leaf nodes",
         "B": "Approximately O(b^(d/2))",
         "C": "Logarithmic in the tree size",
         "D": "O(b^d) but with reduced branching factor"
@@ -461,9 +461,9 @@
       "question": "What is the time complexity of the CYK (Cocke-Younger-Kasami) parsing algorithm for a sentence of length n?",
       "options": {
         "A": "O(n)",
-        "B": "O(n²)",
-        "C": "O(n³)",
-        "D": "O(n⁴)"
+        "B": "O(n\u00b2)",
+        "C": "O(n\u00b3)",
+        "D": "O(n\u2074)"
       },
       "correctOption": "C",
       "userAnswer": "?",
@@ -530,7 +530,7 @@
       "date": "2026-03-06T22:00:00Z",
       "course": "CS 6601 - Artificial Intelligence",
       "topic": "Probabilistic Reasoning / Bayes",
-      "question": "In Bayesian inference, Bayes' theorem is expressed as P(A|B) = P(B|A) × P(A) / P(B). What does P(B|A) represent?",
+      "question": "In Bayesian inference, Bayes' theorem is expressed as P(A|B) = P(B|A) \u00d7 P(A) / P(B). What does P(B|A) represent?",
       "options": {
         "A": "The probability of A given B has occurred",
         "B": "The probability of B given A has occurred",
@@ -584,7 +584,7 @@
       "date": "2026-03-09T21:00:00Z",
       "course": "CS 7641 - Machine Learning",
       "topic": "Neural Networks",
-      "question": "You are training a 4-layer neural network to predict hospital readmission risk (binary classification) from 50 patient features. After 100 epochs, training accuracy is 73% and validation accuracy is 72% — no overfitting — but the loss curve is nearly flat and gradients in the first two layers are consistently near zero. The network uses sigmoid activations throughout all hidden layers. Which change MOST directly targets the root cause of this convergence failure?",
+      "question": "You are training a 4-layer neural network to predict hospital readmission risk (binary classification) from 50 patient features. After 100 epochs, training accuracy is 73% and validation accuracy is 72% \u2014 no overfitting \u2014 but the loss curve is nearly flat and gradients in the first two layers are consistently near zero. The network uses sigmoid activations throughout all hidden layers. Which change MOST directly targets the root cause of this convergence failure?",
       "options": {
         "A": "Add L2 regularization to all weight matrices, since large weights are amplifying the gradient signal and causing it to saturate before reaching early layers",
         "B": "Replace sigmoid activations with ReLU in the hidden layers, since sigmoid's output is bounded [0,1] and its derivative approaches zero in saturated regions, causing gradients to vanish as they propagate backward through multiple layers",
@@ -623,8 +623,8 @@
       "question": "You are building a panorama stitching pipeline that must align overlapping images taken at different scales and orientations. SIFT (Scale-Invariant Feature Transform) is proposed as the feature detector/descriptor. Which of the following correctly describes WHY SIFT is well-suited for this task?",
       "options": {
         "A": "SIFT detects features by applying a fixed-size Sobel edge filter at a single scale, making it fast but only effective when images have identical zoom levels",
-        "B": "SIFT builds a scale-space by convolving the image with Gaussians at multiple scales, detects extrema in Difference-of-Gaussian (DoG) images across scales, and assigns dominant gradient orientations to each keypoint — achieving invariance to both scale and rotation changes",
-        "C": "SIFT achieves scale invariance by resizing all input images to a canonical 256×256 resolution before extracting Harris corner features, which normalizes scale differences",
+        "B": "SIFT builds a scale-space by convolving the image with Gaussians at multiple scales, detects extrema in Difference-of-Gaussian (DoG) images across scales, and assigns dominant gradient orientations to each keypoint \u2014 achieving invariance to both scale and rotation changes",
+        "C": "SIFT achieves scale invariance by resizing all input images to a canonical 256\u00d7256 resolution before extracting Harris corner features, which normalizes scale differences",
         "D": "SIFT uses a learned deep neural network to extract features that are inherently invariant to affine transformations, which is why it was introduced as the first learning-based detector"
       },
       "correctOption": "B",
@@ -643,7 +643,7 @@
       "options": {
         "A": "The advice is wrong because the model is underfitting; you should decrease complexity to reduce variance",
         "B": "The advice is wrong because the model is overfitting (high variance); you should reduce complexity, add regularization, or get more training data",
-        "C": "The advice is correct — higher complexity always reduces the gap between training and validation accuracy",
+        "C": "The advice is correct \u2014 higher complexity always reduces the gap between training and validation accuracy",
         "D": "The advice is wrong because the model has high bias; you should increase the learning rate to escape the local minimum"
       },
       "correctOption": "B",
@@ -665,10 +665,10 @@
         "D": "Use simple pixel intensity comparisons (CENSUS transform) at a single resolution, since raw intensity features generalize better across viewpoints than gradient-based methods"
       },
       "correctOption": "C",
-      "userAnswer": null,
-      "correct": null,
+      "userAnswer": "?",
+      "correct": false,
       "difficulty": "easy",
-      "confidence": null,
+      "confidence": 0,
       "misconception_correction": true
     }
   ]
