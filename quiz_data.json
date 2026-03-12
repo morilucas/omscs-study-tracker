@@ -400,24 +400,6 @@
   },
   "quizzes": [
     {
-      "id": "quiz_018",
-      "date": "2026-03-12T00:21:00Z",
-      "course": "CS 7641 - Machine Learning",
-      "topic": "Bias-Variance Tradeoff",
-      "question": "A model trained on your dataset achieves 99% training accuracy but only 61% validation accuracy. A colleague suggests increasing model complexity to fix this. Why is that advice wrong, and what should you do instead?",
-      "options": {
-        "A": "The advice is wrong because the model is underfitting; you should decrease complexity to reduce variance",
-        "B": "The advice is wrong because the model is overfitting (high variance); you should reduce complexity, add regularization, or get more training data",
-        "C": "The advice is correct — higher complexity always reduces the gap between training and validation accuracy",
-        "D": "The advice is wrong because the model has high bias; you should increase the learning rate to escape the local minimum"
-      },
-      "correctOption": "B",
-      "userAnswer": "B",
-      "correct": true,
-      "difficulty": "easy",
-      "confidence": 3
-    },
-    {
       "id": "quiz_005",
       "date": "2026-03-03T19:53:00Z",
       "course": "CS 6476 - Computer Vision",
@@ -651,6 +633,24 @@
       "difficulty": "easy",
       "confidence": null,
       "misconception_correction": true
+    },
+    {
+      "id": "quiz_018",
+      "date": "2026-03-12T00:21:00Z",
+      "course": "CS 7641 - Machine Learning",
+      "topic": "Bias-Variance Tradeoff",
+      "question": "A model trained on your dataset achieves 99% training accuracy but only 61% validation accuracy. A colleague suggests increasing model complexity to fix this. Why is that advice wrong, and what should you do instead?",
+      "options": {
+        "A": "The advice is wrong because the model is underfitting; you should decrease complexity to reduce variance",
+        "B": "The advice is wrong because the model is overfitting (high variance); you should reduce complexity, add regularization, or get more training data",
+        "C": "The advice is correct — higher complexity always reduces the gap between training and validation accuracy",
+        "D": "The advice is wrong because the model has high bias; you should increase the learning rate to escape the local minimum"
+      },
+      "correctOption": "B",
+      "userAnswer": "B",
+      "correct": true,
+      "difficulty": "easy",
+      "confidence": 3
     }
   ]
 }
