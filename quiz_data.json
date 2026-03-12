@@ -254,11 +254,11 @@
         "misconception": false
       },
       "Feature Detection": {
-        "last_asked_date": "2026-03-11",
-        "total_attempts": 2,
+        "last_asked_date": "2026-03-12",
+        "total_attempts": 3,
         "ease_factor": 1.96,
         "interval_days": 1,
-        "next_review_date": "2026-03-11",
+        "next_review_date": "2026-03-12",
         "streak": 0,
         "difficulty_level": "easy",
         "misconception": true
@@ -651,6 +651,25 @@
       "correct": true,
       "difficulty": "easy",
       "confidence": 3
+    },
+    {
+      "id": "quiz_019",
+      "date": "2026-03-12T21:00:00Z",
+      "course": "CS 6476 - Computer Vision",
+      "topic": "Feature Detection",
+      "question": "You are designing an image matching system for an autonomous drone that must recognize landmarks from varying altitudes and camera angles. You need a feature detection and description pipeline robust to scale and rotation changes. Which pipeline would provide the MOST robust matching performance for this scenario?",
+      "options": {
+        "A": "Apply a Canny edge detector followed by template matching, since edge maps are inherently scale-invariant and capture structural information",
+        "B": "Use Harris corner detection with fixed-scale windows, then match corners using normalized cross-correlation of surrounding patches",
+        "C": "Use SIFT, which detects keypoints across a Difference-of-Gaussian scale space and generates 128-dimensional gradient histogram descriptors, providing robustness to both scale and rotation changes",
+        "D": "Use simple pixel intensity comparisons (CENSUS transform) at a single resolution, since raw intensity features generalize better across viewpoints than gradient-based methods"
+      },
+      "correctOption": "C",
+      "userAnswer": null,
+      "correct": null,
+      "difficulty": "easy",
+      "confidence": null,
+      "misconception_correction": true
     }
   ]
 }
