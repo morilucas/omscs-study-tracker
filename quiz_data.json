@@ -254,8 +254,8 @@
         "misconception": false
       },
       "Feature Detection": {
-        "last_asked_date": "2026-03-12",
-        "total_attempts": 3,
+        "last_asked_date": "2026-03-13",
+        "total_attempts": 4,
         "ease_factor": 1.8599999999999999,
         "interval_days": 1,
         "next_review_date": "2026-03-13",
@@ -669,6 +669,25 @@
       "correct": false,
       "difficulty": "easy",
       "confidence": 0,
+      "misconception_correction": true
+    },
+    {
+      "id": "quiz_020",
+      "date": "2026-03-13T21:00:00Z",
+      "course": "CS 6476 - Computer Vision",
+      "topic": "Feature Detection",
+      "question": "You are building a real-time visual odometry system for a mobile robot. The robot's camera captures frames at 30 fps, and you need to track features across consecutive frames to estimate motion. You test three detectors — Harris corners, SIFT, and ORB — and observe the following: Harris finds 1,200 corners per frame in 2ms but 40% of matches are incorrect after a 15° camera rotation. SIFT finds 800 keypoints in 120ms with 95% correct matches after rotation. ORB finds 900 keypoints in 5ms with 88% correct matches after rotation. Given the 33ms frame budget and the requirement for reliable matching under camera rotation, which detector is the BEST choice and WHY?",
+      "options": {
+        "A": "Harris corners — highest keypoint count ensures the most feature correspondences, and the 2ms runtime leaves ample budget for other processing stages",
+        "B": "SIFT — 95% match accuracy is the only acceptable rate for visual odometry, and the 120ms runtime can be offset by skipping every other frame",
+        "C": "ORB — it uses an oriented FAST detector with rotation-aware BRIEF descriptors, achieving strong rotation invariance (88% match rate) within the real-time budget (5ms << 33ms), unlike Harris which lacks rotation invariance and SIFT which exceeds the frame budget",
+        "D": "Run SIFT on a GPU to bring runtime under 33ms — descriptor quality always trumps runtime, so the correct answer is always the most accurate detector once hardware constraints are removed"
+      },
+      "correctOption": "C",
+      "userAnswer": null,
+      "correct": null,
+      "difficulty": "easy",
+      "confidence": null,
       "misconception_correction": true
     }
   ]
