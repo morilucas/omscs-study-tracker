@@ -212,11 +212,11 @@
         "misconception": false
       },
       "Parsing": {
-        "last_asked_date": "2026-03-03",
-        "total_attempts": 1,
+        "last_asked_date": "2026-03-16",
+        "total_attempts": 2,
         "ease_factor": 1.7,
         "interval_days": 1,
-        "next_review_date": "2026-03-04",
+        "next_review_date": "2026-03-16",
         "streak": 0,
         "difficulty_level": "easy",
         "misconception": false
@@ -689,6 +689,25 @@
       "difficulty": "easy",
       "confidence": 0,
       "misconception_correction": true
+    },
+    {
+      "id": "quiz_021",
+      "date": "2026-03-16T21:24:00Z",
+      "course": "CS 7650 - Natural Language Processing",
+      "topic": "Parsing",
+      "question": "You are building a dependency parser for a production NLP pipeline. You compare a transition-based parser (e.g., arc-eager) with a graph-based parser (e.g., Eisner's algorithm). Your dataset has sentences averaging 25 tokens, and you need to process 10,000 sentences per second at inference time. You also need to handle non-projective dependencies (common in free-word-order languages like Czech). Which statement BEST describes the tradeoff between these two approaches?",
+      "options": {
+        "A": "Transition-based parsers run in O(n) time and are faster at inference, but they cannot handle non-projective dependencies \u2014 making graph-based parsers necessary for free-word-order languages",
+        "B": "Graph-based parsers always outperform transition-based parsers on accuracy because they search the full space of parse trees, so you should use graph-based despite the speed cost",
+        "C": "Both parsers run in O(n\u00b2) time, so there is no speed difference \u2014 choose based solely on accuracy requirements",
+        "D": "Transition-based parsers are faster (O(n)) and can handle non-projective dependencies if trained with a non-projective oracle, while graph-based parsers offer globally optimal solutions at O(n\u00b2) or O(n\u00b3) cost \u2014 the choice depends on whether global optimality justifies the latency budget"
+      },
+      "correctOption": "D",
+      "userAnswer": null,
+      "correct": null,
+      "difficulty": "easy",
+      "confidence": null,
+      "misconception_correction": false
     }
   ]
 }
