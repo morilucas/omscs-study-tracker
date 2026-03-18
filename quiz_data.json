@@ -254,11 +254,11 @@
         "misconception": false
       },
       "Feature Detection": {
-        "last_asked_date": "2026-03-13",
-        "total_attempts": 4,
+        "last_asked_date": "2026-03-18",
+        "total_attempts": 5,
         "ease_factor": 1.7599999999999998,
         "interval_days": 1,
-        "next_review_date": "2026-03-17",
+        "next_review_date": "2026-03-18",
         "streak": 0,
         "difficulty_level": "easy",
         "misconception": true
@@ -708,6 +708,25 @@
       "difficulty": "easy",
       "confidence": 0,
       "misconception_correction": false
+    },
+    {
+      "id": "quiz_022",
+      "date": "2026-03-18T21:00:00Z",
+      "course": "CS 6476 - Computer Vision",
+      "topic": "Feature Detection",
+      "question": "You are implementing a feature matching pipeline for an augmented reality app that overlays virtual furniture onto a live camera feed of a room. The camera moves freely, causing perspective changes, and lighting varies as the user walks around. You compute SIFT descriptors for keypoints in a reference image and the live frame. To match descriptors, you apply Lowe's ratio test: for each descriptor in the reference image, you find its two nearest neighbors in the live frame and keep the match only if (distance to 1st nearest) / (distance to 2nd nearest) < threshold. What is the PRIMARY purpose of this ratio test?",
+      "options": {
+        "A": "It filters out keypoints that are not scale-invariant, ensuring only multi-scale features survive matching",
+        "B": "It rejects ambiguous matches where the best match is not significantly better than the second-best, reducing false positives from repetitive textures or non-distinctive descriptors",
+        "C": "It normalizes descriptor distances to account for illumination changes between the reference and live frames",
+        "D": "It enforces geometric consistency by verifying that matched keypoints maintain their spatial arrangement across frames"
+      },
+      "correctOption": "B",
+      "userAnswer": null,
+      "correct": null,
+      "difficulty": "easy",
+      "confidence": null,
+      "misconception_correction": true
     }
   ]
 }
