@@ -258,10 +258,10 @@
         "total_attempts": 6,
         "ease_factor": 1.6599999999999997,
         "interval_days": 1,
-        "next_review_date": "2026-03-19",
-        "streak": 0,
+        "next_review_date": "2026-03-21",
+        "streak": 1,
         "difficulty_level": "easy",
-        "misconception": true
+        "misconception": false
       },
       "Object Recognition": {
         "last_asked_date": null,
@@ -735,16 +735,16 @@
       "topic": "Feature Detection",
       "question": "You are building a visual place recognition system for a self-driving car. The car stores a database of SIFT descriptors from reference images captured during daytime. At night, the car captures a new image and extracts SIFT descriptors. You match using brute-force L2 distance between 128-dimensional SIFT descriptor vectors. Despite SIFT's gradient histogram design, matching accuracy drops from 92% (day-to-day) to 58% (day-to-night). Which explanation BEST identifies WHY SIFT matching degrades under this illumination shift, and what mitigation would help?",
       "options": {
-        "A": "SIFT descriptors are computed from raw pixel intensities, so any brightness change directly alters the descriptor values — switching to a binary descriptor like BRIEF would fix this since binary comparisons are illumination-invariant",
-        "B": "SIFT's 128-D descriptor is based on gradient orientation histograms, which are largely invariant to linear illumination changes (brightness/contrast). However, day-to-night causes non-linear illumination shifts (e.g., artificial lighting, shadows, specular reflections) that alter local gradient distributions — using histogram equalization or training a learned descriptor (e.g., HardNet) on cross-illumination pairs would improve robustness",
-        "C": "The degradation occurs because SIFT's Difference-of-Gaussian keypoint detector fails to fire at the same locations under different lighting, so no descriptors are extracted at corresponding points — increasing the contrast threshold would fix this",
-        "D": "SIFT matching degrades because L2 distance is not a valid metric for high-dimensional vectors due to the curse of dimensionality — replacing L2 with cosine similarity would fully resolve the accuracy drop regardless of illumination changes"
+        "A": "SIFT descriptors are computed from raw pixel intensities, so any brightness change directly alters the descriptor values \u2014 switching to a binary descriptor like BRIEF would fix this since binary comparisons are illumination-invariant",
+        "B": "SIFT's 128-D descriptor is based on gradient orientation histograms, which are largely invariant to linear illumination changes (brightness/contrast). However, day-to-night causes non-linear illumination shifts (e.g., artificial lighting, shadows, specular reflections) that alter local gradient distributions \u2014 using histogram equalization or training a learned descriptor (e.g., HardNet) on cross-illumination pairs would improve robustness",
+        "C": "The degradation occurs because SIFT's Difference-of-Gaussian keypoint detector fails to fire at the same locations under different lighting, so no descriptors are extracted at corresponding points \u2014 increasing the contrast threshold would fix this",
+        "D": "SIFT matching degrades because L2 distance is not a valid metric for high-dimensional vectors due to the curse of dimensionality \u2014 replacing L2 with cosine similarity would fully resolve the accuracy drop regardless of illumination changes"
       },
       "correctOption": "B",
-      "userAnswer": null,
-      "correct": null,
+      "userAnswer": "B",
+      "correct": true,
       "difficulty": "easy",
-      "confidence": null,
+      "confidence": 1,
       "misconception_correction": true
     }
   ]
