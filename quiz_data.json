@@ -150,11 +150,11 @@
     },
     "CS 7643 - Deep Learning": {
       "Backpropagation": {
-        "last_asked_date": "2026-03-03",
-        "total_attempts": 1,
+        "last_asked_date": "2026-03-20",
+        "total_attempts": 2,
         "ease_factor": 2.5,
         "interval_days": 1,
-        "next_review_date": "2026-03-04",
+        "next_review_date": "2026-03-20",
         "streak": 0,
         "difficulty_level": "easy",
         "misconception": false
@@ -746,6 +746,25 @@
       "difficulty": "easy",
       "confidence": 1,
       "misconception_correction": true
+    },
+    {
+      "id": "quiz_024",
+      "date": "2026-03-20T21:00:00Z",
+      "course": "CS 7643 - Deep Learning",
+      "topic": "Backpropagation",
+      "question": "You are training a 5-layer fully connected network for regression. During debugging, you compute the gradient of the loss with respect to the weights in layer 2 using backpropagation, and separately verify it using finite differences: ∂L/∂w ≈ [L(w+ε) − L(w−ε)] / (2ε). The relative difference between the two is 0.3 (30%). You then check layer 5 and find the relative difference is only 0.0001. Which of the following BEST explains this pattern?",
+      "options": {
+        "A": "The finite difference method is inaccurate for early layers because ε is too large — decreasing ε to 1e-10 would make both layers match equally well",
+        "B": "There is likely a bug in the backpropagation implementation for the early layers — since backprop computes gradients via the chain rule, an error in any intermediate layer's local gradient will compound as it propagates backward, affecting earlier layers more than later ones",
+        "C": "Layer 2 gradients are inherently less precise because they are smaller in magnitude due to vanishing gradients, making any numerical comparison unreliable",
+        "D": "The discrepancy is expected and harmless — backpropagation only guarantees exact gradients for the last layer, and approximations grow for earlier layers as a fundamental limitation of the chain rule"
+      },
+      "correctOption": "B",
+      "userAnswer": null,
+      "correct": null,
+      "difficulty": "easy",
+      "confidence": null,
+      "misconception_correction": false
     }
   ]
 }
