@@ -130,9 +130,9 @@
       "Reinforcement Learning": {
         "last_asked_date": "2026-03-21",
         "total_attempts": 2,
-        "ease_factor": 1.7,
+        "ease_factor": 1.5999999999999999,
         "interval_days": 1,
-        "next_review_date": "2026-03-21",
+        "next_review_date": "2026-03-22",
         "streak": 0,
         "difficulty_level": "easy",
         "misconception": false
@@ -771,18 +771,18 @@
       "date": "2026-03-21T21:00:00Z",
       "course": "CS 7641 - Machine Learning",
       "topic": "Reinforcement Learning",
-      "question": "You are training an RL agent to navigate a 50×50 grid world with sparse rewards (reward of +100 only at the goal, 0 elsewhere). Using tabular Q-learning with ε-greedy exploration (ε=0.1), the agent fails to reach the goal within 10,000 episodes. You switch to the same Q-learning algorithm but replace ε-greedy with Boltzmann (softmax) exploration using a temperature parameter τ that anneals from 10.0 to 0.1 over training. The agent now consistently reaches the goal by episode 2,000. Which explanation BEST accounts for this improvement?",
+      "question": "You are training an RL agent to navigate a 50\u00d750 grid world with sparse rewards (reward of +100 only at the goal, 0 elsewhere). Using tabular Q-learning with \u03b5-greedy exploration (\u03b5=0.1), the agent fails to reach the goal within 10,000 episodes. You switch to the same Q-learning algorithm but replace \u03b5-greedy with Boltzmann (softmax) exploration using a temperature parameter \u03c4 that anneals from 10.0 to 0.1 over training. The agent now consistently reaches the goal by episode 2,000. Which explanation BEST accounts for this improvement?",
       "options": {
-        "A": "Boltzmann exploration converges faster because it always selects the highest Q-value action, eliminating wasted random steps that ε-greedy takes 10% of the time",
-        "B": "High initial τ makes action selection nearly uniform (broad exploration), and as τ decreases, the agent increasingly exploits learned Q-values — this graduated shift from exploration to exploitation is more effective than ε-greedy's fixed 10% random rate, especially in sparse-reward environments where early broad exploration is critical to discovering the goal",
+        "A": "Boltzmann exploration converges faster because it always selects the highest Q-value action, eliminating wasted random steps that \u03b5-greedy takes 10% of the time",
+        "B": "High initial \u03c4 makes action selection nearly uniform (broad exploration), and as \u03c4 decreases, the agent increasingly exploits learned Q-values \u2014 this graduated shift from exploration to exploitation is more effective than \u03b5-greedy's fixed 10% random rate, especially in sparse-reward environments where early broad exploration is critical to discovering the goal",
         "C": "Boltzmann exploration works better because it changes the Q-learning update rule to weight rewards by their probability, making the Bellman backup more accurate in sparse-reward settings",
-        "D": "The improvement is due to the annealing schedule alone — if you annealed ε from 1.0 to 0.01 on the same schedule, ε-greedy would perform identically since both methods select random actions with the same frequency"
+        "D": "The improvement is due to the annealing schedule alone \u2014 if you annealed \u03b5 from 1.0 to 0.01 on the same schedule, \u03b5-greedy would perform identically since both methods select random actions with the same frequency"
       },
       "correctOption": "B",
-      "userAnswer": null,
-      "correct": null,
+      "userAnswer": "?",
+      "correct": false,
       "difficulty": "easy",
-      "confidence": null,
+      "confidence": 0,
       "misconception_correction": false
     }
   ]
