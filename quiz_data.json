@@ -16,11 +16,11 @@
   "topic_stats": {
     "CS 6601 - Artificial Intelligence": {
       "Search (BFS, DFS, A*)": {
-        "last_asked_date": "2026-03-03",
-        "total_attempts": 1,
+        "last_asked_date": "2026-03-22",
+        "total_attempts": 2,
         "ease_factor": 2.5,
         "interval_days": 1,
-        "next_review_date": "2026-03-04",
+        "next_review_date": "2026-03-22",
         "streak": 0,
         "difficulty_level": "easy",
         "misconception": false
@@ -783,6 +783,25 @@
       "correct": false,
       "difficulty": "easy",
       "confidence": 0,
+      "misconception_correction": false
+    },
+    {
+      "id": "quiz_026",
+      "date": "2026-03-22T21:00:00Z",
+      "course": "CS 6601 - Artificial Intelligence",
+      "topic": "Search (BFS, DFS, A*)",
+      "question": "You are building a route planner for a delivery robot in a warehouse with 10,000 grid cells. The robot must find the shortest path from its dock to a pickup station. You implement A* with a Manhattan distance heuristic. Midway through development, a colleague points out that some aisles have one-way conveyors that force the robot to travel in only one direction, making certain Manhattan distance estimates exceed the true shortest path cost. What is the consequence of this, and what should you do?",
+      "options": {
+        "A": "The heuristic is now inadmissible (overestimates true cost), so A* may return a suboptimal path. You should switch to a heuristic that accounts for one-way constraints or fall back to Dijkstra's algorithm (h=0) to guarantee optimality.",
+        "B": "The heuristic is still admissible because Manhattan distance always underestimates in grid worlds regardless of movement constraints, so A* will still return the optimal path.",
+        "C": "A* will fail to terminate because an inadmissible heuristic creates infinite loops in the open list. You must switch to BFS to guarantee both termination and optimality.",
+        "D": "The heuristic overestimates, but A* with graph search and a closed list is guaranteed to still find the optimal path since it never re-expands nodes."
+      },
+      "correctOption": "A",
+      "userAnswer": null,
+      "correct": null,
+      "difficulty": "easy",
+      "confidence": null,
       "misconception_correction": false
     }
   ]
