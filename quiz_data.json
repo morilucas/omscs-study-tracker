@@ -18,9 +18,9 @@
       "Search (BFS, DFS, A*)": {
         "last_asked_date": "2026-03-22",
         "total_attempts": 2,
-        "ease_factor": 2.5,
+        "ease_factor": 2.4,
         "interval_days": 1,
-        "next_review_date": "2026-03-22",
+        "next_review_date": "2026-03-25",
         "streak": 0,
         "difficulty_level": "easy",
         "misconception": false
@@ -798,10 +798,10 @@
         "D": "The heuristic overestimates, but A* with graph search and a closed list is guaranteed to still find the optimal path since it never re-expands nodes."
       },
       "correctOption": "A",
-      "userAnswer": null,
-      "correct": null,
+      "userAnswer": "?",
+      "correct": false,
       "difficulty": "easy",
-      "confidence": null,
+      "confidence": 0,
       "misconception_correction": false
     }
   ]
