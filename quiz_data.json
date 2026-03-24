@@ -26,11 +26,11 @@
         "misconception": false
       },
       "Game Playing / Minimax": {
-        "last_asked_date": "2026-03-03",
-        "total_attempts": 1,
+        "last_asked_date": "2026-03-24",
+        "total_attempts": 2,
         "ease_factor": 1.7,
         "interval_days": 1,
-        "next_review_date": "2026-03-04",
+        "next_review_date": "2026-03-24",
         "streak": 0,
         "difficulty_level": "easy",
         "misconception": false
@@ -802,6 +802,25 @@
       "correct": false,
       "difficulty": "easy",
       "confidence": 0,
+      "misconception_correction": false
+    },
+    {
+      "id": "quiz_027",
+      "date": "2026-03-24T21:00:00Z",
+      "course": "CS 6601 - Artificial Intelligence",
+      "topic": "Game Playing / Minimax",
+      "question": "You are designing an AI for a real-time strategy game where the branching factor is approximately 300 and the game tree depth is 50. Standard minimax with alpha-beta pruning is far too slow, so you implement iterative deepening with a depth limit of 6 and an evaluation function. During testing, you notice that the AI makes strong early-game moves but consistently loses in the endgame because it walks into traps that are visible at depth 8. A colleague suggests using quiescence search. Which statement BEST describes how quiescence search addresses this problem?",
+      "options": {
+        "A": "Quiescence search replaces the evaluation function with a Monte Carlo simulation that randomly plays out games to completion, avoiding the need for deeper deterministic search",
+        "B": "Quiescence search extends the search beyond the depth limit at 'unstable' positions (e.g., where captures or major exchanges are available) until a 'quiet' position is reached, preventing the evaluation function from being applied to volatile states where its static estimate is unreliable (the horizon effect)",
+        "C": "Quiescence search dynamically increases the branching factor by generating additional hypothetical moves at the search frontier, giving the evaluation function more candidate positions to compare",
+        "D": "Quiescence search applies the evaluation function at every node instead of only at leaf nodes, then averages the scores across all depths to produce a more robust estimate that is less sensitive to the depth limit"
+      },
+      "correctOption": "B",
+      "userAnswer": null,
+      "correct": null,
+      "difficulty": "easy",
+      "confidence": null,
       "misconception_correction": false
     }
   ]
