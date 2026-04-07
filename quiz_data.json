@@ -28,9 +28,9 @@
       "Game Playing / Minimax": {
         "last_asked_date": "2026-03-24",
         "total_attempts": 2,
-        "ease_factor": 1.7,
+        "ease_factor": 1.5999999999999999,
         "interval_days": 1,
-        "next_review_date": "2026-03-24",
+        "next_review_date": "2026-04-08",
         "streak": 0,
         "difficulty_level": "easy",
         "misconception": false
@@ -817,10 +817,10 @@
         "D": "Quiescence search applies the evaluation function at every node instead of only at leaf nodes, then averages the scores across all depths to produce a more robust estimate that is less sensitive to the depth limit"
       },
       "correctOption": "B",
-      "userAnswer": null,
-      "correct": null,
+      "userAnswer": "?",
+      "correct": false,
       "difficulty": "easy",
-      "confidence": null,
+      "confidence": 0,
       "misconception_correction": false
     }
   ]
