@@ -23,7 +23,8 @@
         "next_review_date": "2026-03-25",
         "streak": 0,
         "difficulty_level": "easy",
-        "misconception": false
+        "misconception": false,
+        "calibrated": false
       },
       "Game Playing / Minimax": {
         "last_asked_date": "2026-03-24",
@@ -33,7 +34,8 @@
         "next_review_date": "2026-04-08",
         "streak": 0,
         "difficulty_level": "easy",
-        "misconception": false
+        "misconception": false,
+        "calibrated": false
       },
       "Constraint Satisfaction": {
         "last_asked_date": "2026-03-05",
@@ -43,7 +45,8 @@
         "next_review_date": "2026-03-06",
         "streak": 0,
         "difficulty_level": "easy",
-        "misconception": false
+        "misconception": false,
+        "calibrated": false
       },
       "Logic & Planning": {
         "last_asked_date": "2026-03-05",
@@ -53,7 +56,8 @@
         "next_review_date": "2026-03-06",
         "streak": 0,
         "difficulty_level": "easy",
-        "misconception": false
+        "misconception": false,
+        "calibrated": false
       },
       "Probabilistic Reasoning / Bayes": {
         "last_asked_date": "2026-03-10",
@@ -63,7 +67,8 @@
         "next_review_date": "2026-03-11",
         "streak": 0,
         "difficulty_level": "easy",
-        "misconception": false
+        "misconception": false,
+        "calibrated": false
       },
       "Hidden Markov Models": {
         "last_asked_date": "2026-03-07",
@@ -73,7 +78,8 @@
         "next_review_date": "2026-03-08",
         "streak": 0,
         "difficulty_level": "easy",
-        "misconception": false
+        "misconception": false,
+        "calibrated": false
       }
     },
     "CS 7641 - Machine Learning": {
@@ -85,7 +91,8 @@
         "next_review_date": "2026-03-12",
         "streak": 1,
         "difficulty_level": "easy",
-        "misconception": false
+        "misconception": false,
+        "calibrated": false
       },
       "Decision Trees": {
         "last_asked_date": "2026-03-08",
@@ -95,7 +102,8 @@
         "next_review_date": "2026-03-11",
         "streak": 1,
         "difficulty_level": "easy",
-        "misconception": false
+        "misconception": false,
+        "calibrated": false
       },
       "Neural Networks": {
         "last_asked_date": "2026-03-09",
@@ -105,7 +113,8 @@
         "next_review_date": "2026-03-12",
         "streak": 1,
         "difficulty_level": "easy",
-        "misconception": false
+        "misconception": false,
+        "calibrated": false
       },
       "Unsupervised Learning / Clustering": {
         "last_asked_date": "2026-03-06",
@@ -115,7 +124,8 @@
         "next_review_date": "2026-03-07",
         "streak": 0,
         "difficulty_level": "easy",
-        "misconception": false
+        "misconception": false,
+        "calibrated": false
       },
       "Dimensionality Reduction": {
         "last_asked_date": "2026-03-10",
@@ -125,7 +135,8 @@
         "next_review_date": "2026-03-11",
         "streak": 0,
         "difficulty_level": "easy",
-        "misconception": false
+        "misconception": false,
+        "calibrated": false
       },
       "Reinforcement Learning": {
         "last_asked_date": "2026-03-21",
@@ -135,7 +146,8 @@
         "next_review_date": "2026-03-22",
         "streak": 0,
         "difficulty_level": "easy",
-        "misconception": false
+        "misconception": false,
+        "calibrated": false
       },
       "Bias-Variance Tradeoff": {
         "last_asked_date": "2026-03-12",
@@ -145,7 +157,8 @@
         "next_review_date": "2026-03-19",
         "streak": 1,
         "difficulty_level": "easy",
-        "misconception": false
+        "misconception": false,
+        "calibrated": false
       }
     },
     "CS 7643 - Deep Learning": {
@@ -157,7 +170,8 @@
         "next_review_date": "2026-03-21",
         "streak": 0,
         "difficulty_level": "easy",
-        "misconception": false
+        "misconception": false,
+        "calibrated": false
       },
       "CNNs": {
         "last_asked_date": null,
@@ -167,7 +181,8 @@
         "next_review_date": null,
         "streak": 0,
         "difficulty_level": "easy",
-        "misconception": false
+        "misconception": false,
+        "calibrated": false
       },
       "RNNs / LSTMs": {
         "last_asked_date": null,
@@ -177,7 +192,8 @@
         "next_review_date": null,
         "streak": 0,
         "difficulty_level": "easy",
-        "misconception": false
+        "misconception": false,
+        "calibrated": false
       },
       "Transformers / Attention": {
         "last_asked_date": null,
@@ -187,7 +203,8 @@
         "next_review_date": null,
         "streak": 0,
         "difficulty_level": "easy",
-        "misconception": false
+        "misconception": false,
+        "calibrated": false
       },
       "Optimization (SGD, Adam)": {
         "last_asked_date": null,
@@ -197,7 +214,8 @@
         "next_review_date": null,
         "streak": 0,
         "difficulty_level": "easy",
-        "misconception": false
+        "misconception": false,
+        "calibrated": false
       }
     },
     "CS 7650 - Natural Language Processing": {
@@ -209,7 +227,8 @@
         "next_review_date": "2026-04-08",
         "streak": 0,
         "difficulty_level": "easy",
-        "misconception": false
+        "misconception": false,
+        "calibrated": false
       },
       "Parsing": {
         "last_asked_date": "2026-03-16",
@@ -219,7 +238,8 @@
         "next_review_date": "2026-03-17",
         "streak": 0,
         "difficulty_level": "easy",
-        "misconception": false
+        "misconception": false,
+        "calibrated": false
       },
       "Embeddings (Word2Vec, etc.)": {
         "last_asked_date": null,
@@ -229,7 +249,8 @@
         "next_review_date": null,
         "streak": 0,
         "difficulty_level": "easy",
-        "misconception": false
+        "misconception": false,
+        "calibrated": false
       },
       "Sequence Models": {
         "last_asked_date": null,
@@ -239,7 +260,8 @@
         "next_review_date": null,
         "streak": 0,
         "difficulty_level": "easy",
-        "misconception": false
+        "misconception": false,
+        "calibrated": false
       }
     },
     "CS 6476 - Computer Vision": {
@@ -251,7 +273,8 @@
         "next_review_date": null,
         "streak": 0,
         "difficulty_level": "easy",
-        "misconception": false
+        "misconception": false,
+        "calibrated": false
       },
       "Feature Detection": {
         "last_asked_date": "2026-03-19",
@@ -261,7 +284,8 @@
         "next_review_date": "2026-03-21",
         "streak": 1,
         "difficulty_level": "easy",
-        "misconception": false
+        "misconception": false,
+        "calibrated": true
       },
       "Object Recognition": {
         "last_asked_date": null,
@@ -271,7 +295,8 @@
         "next_review_date": null,
         "streak": 0,
         "difficulty_level": "easy",
-        "misconception": false
+        "misconception": false,
+        "calibrated": false
       },
       "Optical Flow": {
         "last_asked_date": null,
@@ -281,7 +306,8 @@
         "next_review_date": null,
         "streak": 0,
         "difficulty_level": "easy",
-        "misconception": false
+        "misconception": false,
+        "calibrated": false
       }
     },
     "CS 6300 - Software Development Process": {
@@ -293,7 +319,8 @@
         "next_review_date": "2026-03-06",
         "streak": 1,
         "difficulty_level": "easy",
-        "misconception": false
+        "misconception": false,
+        "calibrated": false
       },
       "Testing & Debugging": {
         "last_asked_date": null,
@@ -303,7 +330,8 @@
         "next_review_date": null,
         "streak": 0,
         "difficulty_level": "easy",
-        "misconception": false
+        "misconception": false,
+        "calibrated": false
       },
       "Version Control / Git": {
         "last_asked_date": null,
@@ -313,7 +341,8 @@
         "next_review_date": null,
         "streak": 0,
         "difficulty_level": "easy",
-        "misconception": false
+        "misconception": false,
+        "calibrated": false
       },
       "Agile / Scrum": {
         "last_asked_date": null,
@@ -323,7 +352,8 @@
         "next_review_date": null,
         "streak": 0,
         "difficulty_level": "easy",
-        "misconception": false
+        "misconception": false,
+        "calibrated": false
       }
     },
     "CS 7637 - Knowledge-Based AI": {
@@ -335,7 +365,8 @@
         "next_review_date": null,
         "streak": 0,
         "difficulty_level": "easy",
-        "misconception": false
+        "misconception": false,
+        "calibrated": false
       },
       "Frames & Scripts": {
         "last_asked_date": null,
@@ -345,7 +376,8 @@
         "next_review_date": null,
         "streak": 0,
         "difficulty_level": "easy",
-        "misconception": false
+        "misconception": false,
+        "calibrated": false
       },
       "Case-Based Reasoning": {
         "last_asked_date": null,
@@ -355,7 +387,8 @@
         "next_review_date": null,
         "streak": 0,
         "difficulty_level": "easy",
-        "misconception": false
+        "misconception": false,
+        "calibrated": false
       },
       "Planning": {
         "last_asked_date": null,
@@ -365,7 +398,8 @@
         "next_review_date": null,
         "streak": 0,
         "difficulty_level": "easy",
-        "misconception": false
+        "misconception": false,
+        "calibrated": false
       }
     }
   },
@@ -424,7 +458,7 @@
       "topic": "Game Playing / Minimax",
       "question": "In minimax with alpha-beta pruning, what is the maximum number of leaf nodes that must be evaluated in the best case?",
       "options": {
-        "A": "The same as without pruning — all leaf nodes",
+        "A": "The same as without pruning \u2014 all leaf nodes",
         "B": "Approximately O(b^(d/2))",
         "C": "Logarithmic in the tree size",
         "D": "O(b^d) but with reduced branching factor"
@@ -461,9 +495,9 @@
       "question": "What is the time complexity of the CYK (Cocke-Younger-Kasami) parsing algorithm for a sentence of length n?",
       "options": {
         "A": "O(n)",
-        "B": "O(n²)",
-        "C": "O(n³)",
-        "D": "O(n⁴)"
+        "B": "O(n\u00b2)",
+        "C": "O(n\u00b3)",
+        "D": "O(n\u2074)"
       },
       "correctOption": "C",
       "userAnswer": "?",
@@ -530,7 +564,7 @@
       "date": "2026-03-06T22:00:00Z",
       "course": "CS 6601 - Artificial Intelligence",
       "topic": "Probabilistic Reasoning / Bayes",
-      "question": "In Bayesian inference, Bayes' theorem is expressed as P(A|B) = P(B|A) × P(A) / P(B). What does P(B|A) represent?",
+      "question": "In Bayesian inference, Bayes' theorem is expressed as P(A|B) = P(B|A) \u00d7 P(A) / P(B). What does P(B|A) represent?",
       "options": {
         "A": "The probability of A given B has occurred",
         "B": "The probability of B given A has occurred",
@@ -584,7 +618,7 @@
       "date": "2026-03-09T21:00:00Z",
       "course": "CS 7641 - Machine Learning",
       "topic": "Neural Networks",
-      "question": "You are training a 4-layer neural network to predict hospital readmission risk (binary classification) from 50 patient features. After 100 epochs, training accuracy is 73% and validation accuracy is 72% — no overfitting — but the loss curve is nearly flat and gradients in the first two layers are consistently near zero. The network uses sigmoid activations throughout all hidden layers. Which change MOST directly targets the root cause of this convergence failure?",
+      "question": "You are training a 4-layer neural network to predict hospital readmission risk (binary classification) from 50 patient features. After 100 epochs, training accuracy is 73% and validation accuracy is 72% \u2014 no overfitting \u2014 but the loss curve is nearly flat and gradients in the first two layers are consistently near zero. The network uses sigmoid activations throughout all hidden layers. Which change MOST directly targets the root cause of this convergence failure?",
       "options": {
         "A": "Add L2 regularization to all weight matrices, since large weights are amplifying the gradient signal and causing it to saturate before reaching early layers",
         "B": "Replace sigmoid activations with ReLU in the hidden layers, since sigmoid's output is bounded [0,1] and its derivative approaches zero in saturated regions, causing gradients to vanish as they propagate backward through multiple layers",
@@ -623,8 +657,8 @@
       "question": "You are building a panorama stitching pipeline that must align overlapping images taken at different scales and orientations. SIFT (Scale-Invariant Feature Transform) is proposed as the feature detector/descriptor. Which of the following correctly describes WHY SIFT is well-suited for this task?",
       "options": {
         "A": "SIFT detects features by applying a fixed-size Sobel edge filter at a single scale, making it fast but only effective when images have identical zoom levels",
-        "B": "SIFT builds a scale-space by convolving the image with Gaussians at multiple scales, detects extrema in Difference-of-Gaussian (DoG) images across scales, and assigns dominant gradient orientations to each keypoint — achieving invariance to both scale and rotation changes",
-        "C": "SIFT achieves scale invariance by resizing all input images to a canonical 256×256 resolution before extracting Harris corner features, which normalizes scale differences",
+        "B": "SIFT builds a scale-space by convolving the image with Gaussians at multiple scales, detects extrema in Difference-of-Gaussian (DoG) images across scales, and assigns dominant gradient orientations to each keypoint \u2014 achieving invariance to both scale and rotation changes",
+        "C": "SIFT achieves scale invariance by resizing all input images to a canonical 256\u00d7256 resolution before extracting Harris corner features, which normalizes scale differences",
         "D": "SIFT uses a learned deep neural network to extract features that are inherently invariant to affine transformations, which is why it was introduced as the first learning-based detector"
       },
       "correctOption": "B",
@@ -643,7 +677,7 @@
       "options": {
         "A": "The advice is wrong because the model is underfitting; you should decrease complexity to reduce variance",
         "B": "The advice is wrong because the model is overfitting (high variance); you should reduce complexity, add regularization, or get more training data",
-        "C": "The advice is correct — higher complexity always reduces the gap between training and validation accuracy",
+        "C": "The advice is correct \u2014 higher complexity always reduces the gap between training and validation accuracy",
         "D": "The advice is wrong because the model has high bias; you should increase the learning rate to escape the local minimum"
       },
       "correctOption": "B",
@@ -676,12 +710,12 @@
       "date": "2026-03-13T21:00:00Z",
       "course": "CS 6476 - Computer Vision",
       "topic": "Feature Detection",
-      "question": "You are building a real-time visual odometry system for a mobile robot. The robot's camera captures frames at 30 fps, and you need to track features across consecutive frames to estimate motion. You test three detectors — Harris corners, SIFT, and ORB — and observe the following: Harris finds 1,200 corners per frame in 2ms but 40% of matches are incorrect after a 15° camera rotation. SIFT finds 800 keypoints in 120ms with 95% correct matches after rotation. ORB finds 900 keypoints in 5ms with 88% correct matches after rotation. Given the 33ms frame budget and the requirement for reliable matching under camera rotation, which detector is the BEST choice and WHY?",
+      "question": "You are building a real-time visual odometry system for a mobile robot. The robot's camera captures frames at 30 fps, and you need to track features across consecutive frames to estimate motion. You test three detectors \u2014 Harris corners, SIFT, and ORB \u2014 and observe the following: Harris finds 1,200 corners per frame in 2ms but 40% of matches are incorrect after a 15\u00b0 camera rotation. SIFT finds 800 keypoints in 120ms with 95% correct matches after rotation. ORB finds 900 keypoints in 5ms with 88% correct matches after rotation. Given the 33ms frame budget and the requirement for reliable matching under camera rotation, which detector is the BEST choice and WHY?",
       "options": {
-        "A": "Harris corners — highest keypoint count ensures the most feature correspondences, and the 2ms runtime leaves ample budget for other processing stages",
-        "B": "SIFT — 95% match accuracy is the only acceptable rate for visual odometry, and the 120ms runtime can be offset by skipping every other frame",
-        "C": "ORB — it uses an oriented FAST detector with rotation-aware BRIEF descriptors, achieving strong rotation invariance (88% match rate) within the real-time budget (5ms << 33ms), unlike Harris which lacks rotation invariance and SIFT which exceeds the frame budget",
-        "D": "Run SIFT on a GPU to bring runtime under 33ms — descriptor quality always trumps runtime, so the correct answer is always the most accurate detector once hardware constraints are removed"
+        "A": "Harris corners \u2014 highest keypoint count ensures the most feature correspondences, and the 2ms runtime leaves ample budget for other processing stages",
+        "B": "SIFT \u2014 95% match accuracy is the only acceptable rate for visual odometry, and the 120ms runtime can be offset by skipping every other frame",
+        "C": "ORB \u2014 it uses an oriented FAST detector with rotation-aware BRIEF descriptors, achieving strong rotation invariance (88% match rate) within the real-time budget (5ms << 33ms), unlike Harris which lacks rotation invariance and SIFT which exceeds the frame budget",
+        "D": "Run SIFT on a GPU to bring runtime under 33ms \u2014 descriptor quality always trumps runtime, so the correct answer is always the most accurate detector once hardware constraints are removed"
       },
       "correctOption": "C",
       "userAnswer": "?",
@@ -697,10 +731,10 @@
       "topic": "Parsing",
       "question": "You are building a dependency parser for a production NLP pipeline. You compare a transition-based parser (e.g., arc-eager) with a graph-based parser (e.g., Eisner's algorithm). Your dataset has sentences averaging 25 tokens, and you need to process 10,000 sentences per second at inference time. You also need to handle non-projective dependencies (common in free-word-order languages like Czech). Which statement BEST describes the tradeoff between these two approaches?",
       "options": {
-        "A": "Transition-based parsers run in O(n) time and are faster at inference, but they cannot handle non-projective dependencies — making graph-based parsers necessary for free-word-order languages",
+        "A": "Transition-based parsers run in O(n) time and are faster at inference, but they cannot handle non-projective dependencies \u2014 making graph-based parsers necessary for free-word-order languages",
         "B": "Graph-based parsers always outperform transition-based parsers on accuracy because they search the full space of parse trees, so you should use graph-based despite the speed cost",
-        "C": "Both parsers run in O(n²) time, so there is no speed difference — choose based solely on accuracy requirements",
-        "D": "Transition-based parsers are faster (O(n)) and can handle non-projective dependencies if trained with a non-projective oracle, while graph-based parsers offer globally optimal solutions at O(n²) or O(n³) cost — the choice depends on whether global optimality justifies the latency budget"
+        "C": "Both parsers run in O(n\u00b2) time, so there is no speed difference \u2014 choose based solely on accuracy requirements",
+        "D": "Transition-based parsers are faster (O(n)) and can handle non-projective dependencies if trained with a non-projective oracle, while graph-based parsers offer globally optimal solutions at O(n\u00b2) or O(n\u00b3) cost \u2014 the choice depends on whether global optimality justifies the latency budget"
       },
       "correctOption": "D",
       "userAnswer": "?",
@@ -735,10 +769,10 @@
       "topic": "Feature Detection",
       "question": "You are building a visual place recognition system for a self-driving car. The car stores a database of SIFT descriptors from reference images captured during daytime. At night, the car captures a new image and extracts SIFT descriptors. You match using brute-force L2 distance between 128-dimensional SIFT descriptor vectors. Despite SIFT's gradient histogram design, matching accuracy drops from 92% (day-to-day) to 58% (day-to-night). Which explanation BEST identifies WHY SIFT matching degrades under this illumination shift, and what mitigation would help?",
       "options": {
-        "A": "SIFT descriptors are computed from raw pixel intensities, so any brightness change directly alters the descriptor values — switching to a binary descriptor like BRIEF would fix this since binary comparisons are illumination-invariant",
-        "B": "SIFT's 128-D descriptor is based on gradient orientation histograms, which are largely invariant to linear illumination changes (brightness/contrast). However, day-to-night causes non-linear illumination shifts (e.g., artificial lighting, shadows, specular reflections) that alter local gradient distributions — using histogram equalization or training a learned descriptor (e.g., HardNet) on cross-illumination pairs would improve robustness",
-        "C": "The degradation occurs because SIFT's Difference-of-Gaussian keypoint detector fails to fire at the same locations under different lighting, so no descriptors are extracted at corresponding points — increasing the contrast threshold would fix this",
-        "D": "SIFT matching degrades because L2 distance is not a valid metric for high-dimensional vectors due to the curse of dimensionality — replacing L2 with cosine similarity would fully resolve the accuracy drop regardless of illumination changes"
+        "A": "SIFT descriptors are computed from raw pixel intensities, so any brightness change directly alters the descriptor values \u2014 switching to a binary descriptor like BRIEF would fix this since binary comparisons are illumination-invariant",
+        "B": "SIFT's 128-D descriptor is based on gradient orientation histograms, which are largely invariant to linear illumination changes (brightness/contrast). However, day-to-night causes non-linear illumination shifts (e.g., artificial lighting, shadows, specular reflections) that alter local gradient distributions \u2014 using histogram equalization or training a learned descriptor (e.g., HardNet) on cross-illumination pairs would improve robustness",
+        "C": "The degradation occurs because SIFT's Difference-of-Gaussian keypoint detector fails to fire at the same locations under different lighting, so no descriptors are extracted at corresponding points \u2014 increasing the contrast threshold would fix this",
+        "D": "SIFT matching degrades because L2 distance is not a valid metric for high-dimensional vectors due to the curse of dimensionality \u2014 replacing L2 with cosine similarity would fully resolve the accuracy drop regardless of illumination changes"
       },
       "correctOption": "B",
       "userAnswer": "B",
@@ -752,12 +786,12 @@
       "date": "2026-03-20T21:00:00Z",
       "course": "CS 7643 - Deep Learning",
       "topic": "Backpropagation",
-      "question": "You are training a 5-layer fully connected network for regression. During debugging, you compute the gradient of the loss with respect to the weights in layer 2 using backpropagation, and separately verify it using finite differences: ∂L/∂w ≈ [L(w+ε) − L(w−ε)] / (2ε). The relative difference between the two is 0.3 (30%). You then check layer 5 and find the relative difference is only 0.0001. Which of the following BEST explains this pattern?",
+      "question": "You are training a 5-layer fully connected network for regression. During debugging, you compute the gradient of the loss with respect to the weights in layer 2 using backpropagation, and separately verify it using finite differences: \u2202L/\u2202w \u2248 [L(w+\u03b5) \u2212 L(w\u2212\u03b5)] / (2\u03b5). The relative difference between the two is 0.3 (30%). You then check layer 5 and find the relative difference is only 0.0001. Which of the following BEST explains this pattern?",
       "options": {
-        "A": "The finite difference method is inaccurate for early layers because ε is too large — decreasing ε to 1e-10 would make both layers match equally well",
-        "B": "There is likely a bug in the backpropagation implementation for the early layers — since backprop computes gradients via the chain rule, an error in any intermediate layer's local gradient will compound as it propagates backward, affecting earlier layers more than later ones",
+        "A": "The finite difference method is inaccurate for early layers because \u03b5 is too large \u2014 decreasing \u03b5 to 1e-10 would make both layers match equally well",
+        "B": "There is likely a bug in the backpropagation implementation for the early layers \u2014 since backprop computes gradients via the chain rule, an error in any intermediate layer's local gradient will compound as it propagates backward, affecting earlier layers more than later ones",
         "C": "Layer 2 gradients are inherently less precise because they are smaller in magnitude due to vanishing gradients, making any numerical comparison unreliable",
-        "D": "The discrepancy is expected and harmless — backpropagation only guarantees exact gradients for the last layer, and approximations grow for earlier layers as a fundamental limitation of the chain rule"
+        "D": "The discrepancy is expected and harmless \u2014 backpropagation only guarantees exact gradients for the last layer, and approximations grow for earlier layers as a fundamental limitation of the chain rule"
       },
       "correctOption": "B",
       "userAnswer": "C",
@@ -771,12 +805,12 @@
       "date": "2026-03-21T21:00:00Z",
       "course": "CS 7641 - Machine Learning",
       "topic": "Reinforcement Learning",
-      "question": "You are training an RL agent to navigate a 50×50 grid world with sparse rewards (reward of +100 only at the goal, 0 elsewhere). Using tabular Q-learning with ε-greedy exploration (ε=0.1), the agent fails to reach the goal within 10,000 episodes. You switch to the same Q-learning algorithm but replace ε-greedy with Boltzmann (softmax) exploration using a temperature parameter τ that anneals from 10.0 to 0.1 over training. The agent now consistently reaches the goal by episode 2,000. Which explanation BEST accounts for this improvement?",
+      "question": "You are training an RL agent to navigate a 50\u00d750 grid world with sparse rewards (reward of +100 only at the goal, 0 elsewhere). Using tabular Q-learning with \u03b5-greedy exploration (\u03b5=0.1), the agent fails to reach the goal within 10,000 episodes. You switch to the same Q-learning algorithm but replace \u03b5-greedy with Boltzmann (softmax) exploration using a temperature parameter \u03c4 that anneals from 10.0 to 0.1 over training. The agent now consistently reaches the goal by episode 2,000. Which explanation BEST accounts for this improvement?",
       "options": {
-        "A": "Boltzmann exploration converges faster because it always selects the highest Q-value action, eliminating wasted random steps that ε-greedy takes 10% of the time",
-        "B": "High initial τ makes action selection nearly uniform (broad exploration), and as τ decreases, the agent increasingly exploits learned Q-values — this graduated shift from exploration to exploitation is more effective than ε-greedy's fixed 10% random rate, especially in sparse-reward environments where early broad exploration is critical to discovering the goal",
+        "A": "Boltzmann exploration converges faster because it always selects the highest Q-value action, eliminating wasted random steps that \u03b5-greedy takes 10% of the time",
+        "B": "High initial \u03c4 makes action selection nearly uniform (broad exploration), and as \u03c4 decreases, the agent increasingly exploits learned Q-values \u2014 this graduated shift from exploration to exploitation is more effective than \u03b5-greedy's fixed 10% random rate, especially in sparse-reward environments where early broad exploration is critical to discovering the goal",
         "C": "Boltzmann exploration works better because it changes the Q-learning update rule to weight rewards by their probability, making the Bellman backup more accurate in sparse-reward settings",
-        "D": "The improvement is due to the annealing schedule alone — if you annealed ε from 1.0 to 0.01 on the same schedule, ε-greedy would perform identically since both methods select random actions with the same frequency"
+        "D": "The improvement is due to the annealing schedule alone \u2014 if you annealed \u03b5 from 1.0 to 0.01 on the same schedule, \u03b5-greedy would perform identically since both methods select random actions with the same frequency"
       },
       "correctOption": "B",
       "userAnswer": "?",
@@ -828,10 +862,10 @@
       "date": "2026-04-08T21:00:00Z",
       "course": "CS 7650 - Natural Language Processing",
       "topic": "Language Models",
-      "question": "You are evaluating two language models — a 3-gram model with Kneser-Ney smoothing and an LSTM-based neural language model — for a speech recognition system. Both are trained on 100 million words of English text. On a held-out test set, the LSTM achieves perplexity 72 vs. the 3-gram's 135. However, the LSTM is 40× slower at inference. A colleague proposes using the LSTM's output distributions to train the 3-gram model via knowledge distillation — specifically, training the 3-gram model to predict the LSTM's soft probability distributions over the vocabulary instead of raw corpus counts. Which statement BEST describes what knowledge distillation achieves in this context?",
+      "question": "You are evaluating two language models \u2014 a 3-gram model with Kneser-Ney smoothing and an LSTM-based neural language model \u2014 for a speech recognition system. Both are trained on 100 million words of English text. On a held-out test set, the LSTM achieves perplexity 72 vs. the 3-gram's 135. However, the LSTM is 40\u00d7 slower at inference. A colleague proposes using the LSTM's output distributions to train the 3-gram model via knowledge distillation \u2014 specifically, training the 3-gram model to predict the LSTM's soft probability distributions over the vocabulary instead of raw corpus counts. Which statement BEST describes what knowledge distillation achieves in this context?",
       "options": {
         "A": "Knowledge distillation transfers the LSTM's recurrent architecture to the 3-gram model, allowing it to implicitly run LSTM-style computations within the n-gram lookup table",
-        "B": "Knowledge distillation trains the 3-gram model on the LSTM's soft output distributions (soft labels), which encode richer inter-word similarity information than one-hot corpus counts — this can yield lower perplexity than training on hard labels alone, while preserving the 3-gram model's fast inference speed",
+        "B": "Knowledge distillation trains the 3-gram model on the LSTM's soft output distributions (soft labels), which encode richer inter-word similarity information than one-hot corpus counts \u2014 this can yield lower perplexity than training on hard labels alone, while preserving the 3-gram model's fast inference speed",
         "C": "Knowledge distillation works by averaging the LSTM's and 3-gram's probability distributions at inference time, creating an ensemble that runs at the speed of the slower model",
         "D": "Knowledge distillation extracts the LSTM's hidden state vectors and appends them as additional count features in the 3-gram's smoothing equation, directly augmenting the backoff weights"
       },
