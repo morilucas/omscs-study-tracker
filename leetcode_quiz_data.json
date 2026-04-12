@@ -30,7 +30,12 @@
     "1D Dynamic Programming",
     "2D Dynamic Programming",
     "Knapsack Pattern",
-    "Bitwise XOR"
+    "Bitwise XOR",
+    "Greedy",
+    "Matrix / Island Traversal",
+    "Kadane's Algorithm",
+    "Divide & Conquer",
+    "Design Problems"
   ],
   "question_types": [
     "pattern_recognition",
@@ -307,6 +312,61 @@
       "calibrated": false
     },
     "Bitwise XOR": {
+      "last_asked_date": null,
+      "total_attempts": 0,
+      "ease_factor": 2.5,
+      "interval_days": 1,
+      "next_review_date": null,
+      "streak": 0,
+      "difficulty_level": "easy",
+      "misconception": false,
+      "calibrated": false
+    },
+    "Greedy": {
+      "last_asked_date": null,
+      "total_attempts": 0,
+      "ease_factor": 2.5,
+      "interval_days": 1,
+      "next_review_date": null,
+      "streak": 0,
+      "difficulty_level": "easy",
+      "misconception": false,
+      "calibrated": false
+    },
+    "Matrix / Island Traversal": {
+      "last_asked_date": null,
+      "total_attempts": 0,
+      "ease_factor": 2.5,
+      "interval_days": 1,
+      "next_review_date": null,
+      "streak": 0,
+      "difficulty_level": "easy",
+      "misconception": false,
+      "calibrated": false
+    },
+    "Kadane's Algorithm": {
+      "last_asked_date": null,
+      "total_attempts": 0,
+      "ease_factor": 2.5,
+      "interval_days": 1,
+      "next_review_date": null,
+      "streak": 0,
+      "difficulty_level": "easy",
+      "misconception": false,
+      "calibrated": false
+    },
+    "Divide & Conquer": {
+      "last_asked_date": null,
+      "total_attempts": 0,
+      "ease_factor": 2.5,
+      "interval_days": 1,
+      "next_review_date": null,
+      "streak": 0,
+      "difficulty_level": "easy",
+      "misconception": false,
+      "calibrated": false
+    },
+    "Design Problems": {
       "last_asked_date": null,
       "total_attempts": 0,
       "ease_factor": 2.5,
