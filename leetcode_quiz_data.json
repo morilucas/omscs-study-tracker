@@ -48,11 +48,11 @@
   ],
   "topic_stats": {
     "Prefix Sum": {
-      "last_asked_date": null,
-      "total_attempts": 0,
+      "last_asked_date": "2026-04-12",
+      "total_attempts": 1,
       "ease_factor": 2.5,
       "interval_days": 1,
-      "next_review_date": null,
+      "next_review_date": "2026-04-12",
       "streak": 0,
       "difficulty_level": "easy",
       "misconception": false,
@@ -394,5 +394,31 @@
     "misconception_correction": false,
     "related_problems": ["LC XXX - Problem Name"]
   },
-  "quizzes": []
+  "quizzes": [
+    {
+      "id": "quiz_001",
+      "date": "2026-04-12T21:00:00Z",
+      "pattern": "Prefix Sum",
+      "question_type": "pattern_recognition",
+      "question": "You are given an integer array nums of length up to 100,000 and up to 100,000 queries. Each query asks for the sum of nums[left:right+1]. The array does not change between queries. Which pattern gives the most efficient overall solution, similar to LC 303?",
+      "options": {
+        "A": "Build a prefix sum array once, then answer each range-sum query in O(1)",
+        "B": "Use a sliding window for each query, expanding from left to right",
+        "C": "Use two pointers from both ends for each query until they meet",
+        "D": "Sort the array first, then binary search the query boundaries"
+      },
+      "correctOption": "A",
+      "explanation": "A is correct because prefix sums preprocess once in O(n) and answer each immutable range-sum query in O(1). B is the tempting wrong answer because sliding window helps with contiguous scans under a moving condition, but it does not give O(1) arbitrary range queries.",
+      "userAnswer": null,
+      "correct": null,
+      "difficulty": "easy",
+      "confidence": null,
+      "misconception_correction": false,
+      "related_problems": [
+        "LC 303 - Range Sum Query Immutable",
+        "LC 724 - Find Pivot Index",
+        "LC 560 - Subarray Sum Equals K"
+      ]
+    }
+  ]
 }
